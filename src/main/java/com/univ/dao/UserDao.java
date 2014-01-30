@@ -8,4 +8,6 @@ import com.univ.model.User;
 public interface UserDao {
     public void insertData(User user);
 
+    public User getUserByEmail(String email);
+
 }

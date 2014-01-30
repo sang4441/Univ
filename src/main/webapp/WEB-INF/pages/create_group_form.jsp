@@ -33,7 +33,7 @@
 		<%--<div><input type="submit" value="Create group"></div>--%>
 	<%--</form:form>--%>
 
-<form action="/create_group" method="post">
+<form action="create_group" method="post">
     <div><input type="text" name="name" placeholder="name"/></div>
     <div><textarea name="description" rows="4" cols="50" placeholder="description"></textarea></div>
     <div>

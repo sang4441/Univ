@@ -16,4 +16,14 @@ public class UserServiceImpl implements UserService{
     public void insertUser(User user) {
         userdao.insertData(user);
     }
+
+    @Override
+    public User findUserByEmail(String email) {
+        return userdao.getUserByEmail(email);
+//        if (password.equals(user.getPassword())) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+    }
 }

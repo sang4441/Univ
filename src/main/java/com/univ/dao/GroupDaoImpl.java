@@ -18,7 +18,7 @@ public class GroupDaoImpl implements GroupDao{
 
     public void insertData(Group group) {
 
-        String sql = "INSERT INTO user (email, description, type_id, category_id) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO groups (name, description, type_id, category_id) VALUES (?, ?, ?, ?)";
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 

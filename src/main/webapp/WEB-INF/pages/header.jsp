@@ -1,5 +1,4 @@
-<%--<%@ page language="java" import="javax.servlet.jsp.PageContent" contentType="text/html; charset=ISO-8859-1"pageEncoding="ISO-8859-1"%>--%>
-<!DOCTYPE HTML>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE HTML>
 <html>
 <head>
 <title>Univ</title>
@@ -11,9 +10,18 @@
 <div class="row-fluid">
 	<div class="span8 offset4">
 		<input type="text" placeholder="search"/>
-		<button type="button">Search</button>
-		<a href="signup"><button type="button">Sign up</button></a>
-		<a href="create_group_form"><button type="button">Create Group</button></a>
+		<button class="btn" type="button">Search</button>
+        <c:choose>
+            <c:when test="${not empty sessionScope.user.email}">
+                Hi ${user.email}
+                <a href="create_group_form"><button class="btn" type="button">Create Group</button></a>
+                <a href="log_out"><button class="btn" type="button">Log Out</button></a>
+            </c:when>
+            <c:otherwise>
+               <a href="sign_up_page"><button class="btn" type="button">Sign up</button></a>
+               <a href="sign_in_page"><button class="btn" type="button">Sign in</button></a>
+            </c:otherwise>
+        </c:choose>
 	</div>
 </div>
 

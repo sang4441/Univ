@@ -12,12 +12,18 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class HelloController {
-    @Autowired
-    UserService userService;
-    GroupService groupService;
+    @Autowired GroupService groupService;
+    @Autowired UserService userService;
+
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
@@ -25,10 +31,62 @@ public class HelloController {
 		return "header";
 	}
 
-    @RequestMapping(value = "/signup", method = RequestMethod.GET)
+    @RequestMapping(value = "/sign_up_page", method = RequestMethod.GET)
     public String signUp(ModelMap model) {
         return "sign_up";
 
+    }
+
+    @RequestMapping(value = "/create_user", method = RequestMethod.POST)
+//    public String createUser(@ModelAttribute("userForm") User user) {
+
+    public String createUser(@RequestParam("email") String email,
+                             @RequestParam("password") String password,
+                             @RequestParam("firstName") String firstName,
+                             @RequestParam("lastName") String lastName,
+                             Model model
+    ) {
+
+        User user = new User();
+        user.setEmail(email);
+        user.setFirstName(firstName);
+        user.setLastName(lastName);
+        user.setPassword(password);
+        userService.insertUser(user);
+        return "sign_in";
+    }
+
+    @RequestMapping(value = "/sign_in_page", method = RequestMethod.GET)
+    public String signInPage(ModelMap model) {
+        return "sign_in";
+
+    }
+
+    @RequestMapping(value = "/signin", method = RequestMethod.POST)
+    public ModelAndView signIn(
+            HttpServletRequest request,
+            @RequestParam("email") String email,
+            @RequestParam("password") String password,
+            Model model) {
+
+        User user = userService.findUserByEmail(email);
+        if (password.equals(user.getPassword())) {
+            HttpSession session = request.getSession();
+            session.setAttribute("user", user);
+            session.setMaxInactiveInterval(30*60);
+        } else {
+            return new ModelAndView("redirect:sign_in_page", "err", "Login unsuccessful");
+        }
+        return new ModelAndView("redirect:/", "user", user);
+    }
+
+    @RequestMapping(value = "/log_out", method = RequestMethod.GET)
+    public String logOut(
+            HttpServletRequest request,
+            ModelMap model) {
+        HttpSession session = request.getSession();
+        session.setAttribute("user", new User());
+        return "redirect:/";
     }
 
     @RequestMapping(value = "/create_group_form", method = RequestMethod.GET)
@@ -49,25 +107,6 @@ public class HelloController {
         group.setTypeId(typeId);
         group.setCategory_id(categoryId);
         groupService.insertGroup(group);
-        return "header";
-    }
-
-    @RequestMapping(value = "/create_user", method = RequestMethod.POST)
-//    public String createUser(@ModelAttribute("userForm") User user) {
-
-            public String createUser(@RequestParam("email") String email,
-                             @RequestParam("password") String password,
-                             @RequestParam("firstName") String firstName,
-                             @RequestParam("lastName") String lastName,
-                             Model model
-                             ) {
-
-        User user = new User();
-        user.setEmail(email);
-        user.setFirstName(firstName);
-        user.setLastName(lastName);
-        user.setPassword(password);
-        userService.insertUser(user);
         return "header";
     }
 }

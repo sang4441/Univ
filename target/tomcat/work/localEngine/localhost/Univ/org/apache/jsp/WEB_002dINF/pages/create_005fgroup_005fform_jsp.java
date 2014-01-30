@@ -118,7 +118,7 @@ public final class create_005fgroup_005fform_jsp extends org.apache.jasper.runti
       out.write('	');
       out.write("\n");
       out.write("\n");
-      out.write("<form action=\"/create_group\" method=\"post\">\n");
+      out.write("<form action=\"create_group\" method=\"post\">\n");
       out.write("    <div><input type=\"text\" name=\"name\" placeholder=\"name\"/></div>\n");
       out.write("    <div><textarea name=\"description\" rows=\"4\" cols=\"50\" placeholder=\"description\"></textarea></div>\n");
       out.write("    <div>\n");
