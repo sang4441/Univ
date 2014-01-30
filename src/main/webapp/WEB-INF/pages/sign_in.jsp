@@ -3,7 +3,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 
-<jsp:include page="header.jsp" />
 <h1>Sign In</h1>
 <form method="post" action="signin">
     <div><input type="text" name="email" placeholder="email"/></div>

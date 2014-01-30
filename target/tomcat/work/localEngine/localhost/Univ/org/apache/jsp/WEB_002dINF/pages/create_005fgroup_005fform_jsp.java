@@ -55,8 +55,6 @@ public final class create_005fgroup_005fform_jsp extends org.apache.jasper.runti
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "header.jsp", out, false);
-      out.write("\n");
       out.write("\n");
       out.write("    <h1>Group create!!!</h1>\n");
       out.write("\t\n");

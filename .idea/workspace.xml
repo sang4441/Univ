@@ -64,90 +64,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sign_up.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_up.jsp">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="699" selection-end="699" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/GroupServiceImpl.java">
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="34" column="0" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-7.2" vertical-offset="150" max-vertical-offset="1335">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/body.jsp">
+      <file leaf-file-name="GroupDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/GroupDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="570">
+            <state line="8" column="16" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HelloController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/controller/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="26" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.2802303" vertical-offset="889" max-vertical-offset="1770">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="28" selection-start="212" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="885">
+            <state line="59" column="57" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1470">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/UserDaoImpl.java">
+      <file leaf-file-name="clubmodel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/models/clubmodel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="645">
-              <folding>
-                <marker date="1391049377000" expanded="true" signature="579:656" placeholder="INSERT INTO ..." />
-                <marker date="1391049377000" expanded="true" signature="984:1016" placeholder="SELECT * FRO..user..." />
-                <marker date="1391049377000" expanded="true" signature="984:1018" placeholder="SELECT * FRO..user..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRowMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/jdbc/UserRowMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="2" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign_in.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_in.jsp">
+      <file leaf-file-name="clublist.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/clublist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="42" selection-start="596" selection-end="596" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="315">
+            <state line="24" column="39" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
               <folding>
-                <marker date="1391053030000" expanded="true" signature="316:615" placeholder="..." />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp">
+      <file leaf-file-name="signup.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/signup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="64" selection-start="432" selection-end="484" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="930">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/footer.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_group_form.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create_group_form.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.20547946" vertical-offset="0" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -171,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/univ/services/GroupServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/model/Group.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create_group_form.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/dao/GroupDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/services/UserService.java" />
@@ -180,11 +184,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/univ/jdbc/UserRowMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/dao/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/session.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_up.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/views/clublist.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/body.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_in.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sidebar.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_in.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_up.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create_group_form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp" />
       </list>
     </option>
   </component>
@@ -238,10 +247,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1054" />
+    <option name="height" value="874" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -288,6 +296,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -588,8 +598,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -995,14 +1003,15 @@
       <workItem from="1390935476981" duration="645000" />
       <workItem from="1390936263190" duration="15432000" />
       <workItem from="1391046006486" duration="6261000" />
+      <workItem from="1391099994380" duration="5242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23695000" />
+    <option name="totallyTimeSpent" value="28937000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="22" width="1920" height="1054" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1027,7 +1036,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23855165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18051118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4017094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41798943" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1057,6 +1066,68 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_up.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/GroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="26" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1770">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="212" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="780">
+          <folding>
+            <marker date="1391049377000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1391049377000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user..." />
+            <marker date="1391049377000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/jdbc/UserRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="2" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_in.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="42" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="64" selection-start="432" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="54" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
@@ -1124,20 +1195,6 @@
             <element signature="e#436#437#0" expanded="false" />
             <element signature="e#468#469#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create_group_form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="1627" selection-end="1627" vertical-scroll-proportion="-3.125" vertical-offset="450" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/GroupDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,9 +1267,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="645">
           <folding>
-            <marker date="1391049377000" expanded="true" signature="579:656" placeholder="INSERT INTO ..." />
-            <marker date="1391049377000" expanded="true" signature="984:1016" placeholder="SELECT * FRO..user..." />
-            <marker date="1391049377000" expanded="true" signature="984:1018" placeholder="SELECT * FRO..user..." />
+            <marker date="1391049377000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1391049377000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user..." />
+            <marker date="1391049377000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user..." />
           </folding>
         </state>
       </provider>
@@ -1231,42 +1288,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/body.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/models/clubmodel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="511">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/clublist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="39" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="511">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/GroupDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="64" selection-start="432" selection-end="484" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="930">
+        <state line="8" column="16" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_up.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="699" selection-end="699" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="330">
+        <state line="34" column="0" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-7.2" vertical-offset="150" max-vertical-offset="1335">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_in.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="596" selection-end="596" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="315">
-          <folding>
-            <marker date="1391053030000" expanded="true" signature="316:615" placeholder="..." />
-          </folding>
+        <state line="14" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.3853211" vertical-offset="0" max-vertical-offset="545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_up.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="35" selection-start="170" selection-end="170" vertical-scroll-proportion="0.08256881" vertical-offset="0" max-vertical-offset="545">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="26" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.2802303" vertical-offset="889" max-vertical-offset="1770">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="59" column="57" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create_group_form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.20547946" vertical-offset="0" max-vertical-offset="960">
+          <folding />
         </state>
       </provider>
     </entry>

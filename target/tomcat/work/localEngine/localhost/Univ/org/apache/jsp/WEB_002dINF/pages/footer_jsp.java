@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class sign_005fup_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -40,7 +40,7 @@ public final class sign_005fup_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 
     try {
-      response.setContentType("text/html; charset=UTF-8");
+      response.setContentType("text/html");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -50,21 +50,6 @@ public final class sign_005fup_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\t<h1>sign up pagae</h1>\n");
-      out.write("\n");
-      out.write("<form method=\"post\" action=\"create_user\">\n");
-      out.write("\n");
-      out.write("    <div><input type=\"text\" name=\"email\" placeholder=\"email\"/></div>\n");
-      out.write("    <div><input type=\"password\" name=\"password\" placeholder=\"password\"/></div>\n");
-      out.write("    <div><input type=\"text\" name=\"firstName\" placeholder=\"first name\"/></div>\n");
-      out.write("\n");
-      out.write("    <div><input type=\"text\" name=\"lastName\" placeholder=\"last name\"/></div>\n");
-      out.write("    <div><input type=\"submit\" value=\"Sign up\"></div>\n");
-      out.write("</form>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

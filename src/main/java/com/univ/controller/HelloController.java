@@ -28,19 +28,18 @@ public class HelloController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
 		model.addAttribute("message", "Hello world!");
-		return "header";
+		return "index";
 	}
 
     @RequestMapping(value = "/sign_up_page", method = RequestMethod.GET)
-    public String signUp(ModelMap model) {
-        return "sign_up";
-
+    public ModelAndView signUp(ModelMap model) {
+        return new ModelAndView("index", "content", "sign_up");
     }
 
     @RequestMapping(value = "/create_user", method = RequestMethod.POST)
 //    public String createUser(@ModelAttribute("userForm") User user) {
 
-    public String createUser(@RequestParam("email") String email,
+    public ModelAndView createUser(@RequestParam("email") String email,
                              @RequestParam("password") String password,
                              @RequestParam("firstName") String firstName,
                              @RequestParam("lastName") String lastName,
@@ -53,13 +52,12 @@ public class HelloController {
         user.setLastName(lastName);
         user.setPassword(password);
         userService.insertUser(user);
-        return "sign_in";
+        return new ModelAndView("index", "content", "sign_in");
     }
 
     @RequestMapping(value = "/sign_in_page", method = RequestMethod.GET)
-    public String signInPage(ModelMap model) {
-        return "sign_in";
-
+    public ModelAndView signInPage(ModelMap model) {
+        return new ModelAndView("index", "content", "sign_in");
     }
 
     @RequestMapping(value = "/signin", method = RequestMethod.POST)
@@ -90,9 +88,8 @@ public class HelloController {
     }
 
     @RequestMapping(value = "/create_group_form", method = RequestMethod.GET)
-    public String groupForm(ModelMap model) {
-        return "create_group_form";
-
+    public ModelAndView groupForm(ModelMap model) {
+        return new ModelAndView("index", "content", "create_group_form");
     }
 
     @RequestMapping(value = "/create_group", method = RequestMethod.POST)
@@ -107,6 +104,6 @@ public class HelloController {
         group.setTypeId(typeId);
         group.setCategory_id(categoryId);
         groupService.insertGroup(group);
-        return "header";
+        return "redirect:/";
     }
 }
