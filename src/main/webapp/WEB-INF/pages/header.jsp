@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE HTML>
 <div class="row-fluid">
     <div class="span8 offset4">
-        <a href="index"><button class="btn" type="button">Home</button></a>
+        <a href="/Univ"><button class="btn" type="button">Home</button></a>
         <input type="text" placeholder="search"/>
         <button class="btn" type="button">Search</button>
         <c:choose>

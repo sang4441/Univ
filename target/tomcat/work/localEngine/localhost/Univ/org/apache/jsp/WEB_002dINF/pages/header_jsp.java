@@ -63,7 +63,7 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<!DOCTYPE HTML>\n");
       out.write("<div class=\"row-fluid\">\n");
       out.write("    <div class=\"span8 offset4\">\n");
-      out.write("        <a href=\"index\"><button class=\"btn\" type=\"button\">Home</button></a>\n");
+      out.write("        <a href=\"/Univ\"><button class=\"btn\" type=\"button\">Home</button></a>\n");
       out.write("        <input type=\"text\" placeholder=\"search\"/>\n");
       out.write("        <button class=\"btn\" type=\"button\">Search</button>\n");
       out.write("        ");

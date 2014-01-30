@@ -94,7 +94,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </ul>\n");
       out.write("        </div>\n");
       out.write("\n");
-      out.write("        <div id=\"content\" class=\"span6\">\n");
+      out.write("        ");
+      out.write("\n");
       out.write("            ");
       if (_jspx_meth_c_005fchoose_005f0(_jspx_page_context))
         return;
@@ -118,7 +119,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("            ");
       out.write("\n");
-      out.write("        </div>\n");
+      out.write("        ");
+      out.write("\n");
       out.write("    </div>\n");
       out.write("</div>\n");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "footer.jsp", out, false);
@@ -263,6 +265,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
+    HttpServletRequest request = (HttpServletRequest)_jspx_page_context.getRequest();
+    HttpServletResponse response = (HttpServletResponse)_jspx_page_context.getResponse();
     //  c:otherwise
     org.apache.taglibs.standard.tag.common.core.OtherwiseTag _jspx_th_c_005fotherwise_005f0 = (org.apache.taglibs.standard.tag.common.core.OtherwiseTag) _005fjspx_005ftagPool_005fc_005fotherwise.get(org.apache.taglibs.standard.tag.common.core.OtherwiseTag.class);
     _jspx_th_c_005fotherwise_005f0.setPageContext(_jspx_page_context);
@@ -271,6 +275,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_005fotherwise_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n");
+        out.write("                    ");
+        org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "body.jsp", out, false);
         out.write("\n");
         out.write("                ");
         int evalDoAfterBody = _jspx_th_c_005fotherwise_005f0.doAfterBody();

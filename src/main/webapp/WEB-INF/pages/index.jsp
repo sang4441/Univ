@@ -28,14 +28,14 @@
             </ul>
         </div>
 
-        <div id="content" class="span6">
+        <%--<div id="content" class="span10">--%>
             <c:choose>
                 <c:when test="${not empty content}">
                     <c:set var="content" value="${content}.jsp"/>
                     <jsp:include page="${content}"/>
                 </c:when>
                 <c:otherwise>
-
+                    <jsp:include page="body.jsp"/>
                 </c:otherwise>
             </c:choose>
 
@@ -48,7 +48,7 @@
                     <%--<div>Members: 184</div>--%>
                 <%--</div>--%>
             <%--</div>--%>
-        </div>
+        <%--</div>--%>
     </div>
 </div>
 <jsp:include page="footer.jsp" />
