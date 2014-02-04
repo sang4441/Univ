@@ -11,24 +11,12 @@
 <body>
 
 <jsp:include page="header.jsp" />
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span2">
-            <ul class="nav nav-tabs nav-stacked">
-                <li><a><small>Category</small></a></li>
-                <li><a>All</a></li>
-                <li><a>Sports & athletic</a></li>
-                <li><a>Arts & Music</a></li>
-                <li><a>Charitable, cummunity service</a></li>
-                <li><a>Health</a></li>
-                <li><a>Learning & Academics & project</a></li>
-                <li><a>Entertainment & leisure & life style</a></li>
-                <li><a>Business, leadership, enterpreneur</a></li>
-                <li><a>Religion & Culture</a></li>
-            </ul>
-        </div>
+<div id="content-body">
+    <div class="container-fluid">
+        <div class="row-fluid">
 
-        <%--<div id="content" class="span10">--%>
+
+            <%--<div id="content" class="span10">--%>
             <c:choose>
                 <c:when test="${not empty content}">
                     <c:set var="content" value="${content}.jsp"/>
@@ -41,14 +29,15 @@
 
             <%--<jsp:include page="${content}"/>--%>
             <%--<div class="group-box">--%>
-                <%--<div class="group-info">--%>
-                    <%--<h3>A Capella Club, UW</h3>--%>
-                    <%--<div>Category: Music</div>--%>
-                    <%--<div>Leader: John Kim</div>--%>
-                    <%--<div>Members: 184</div>--%>
-                <%--</div>--%>
+            <%--<div class="group-info">--%>
+            <%--<h3>A Capella Club, UW</h3>--%>
+            <%--<div>Category: Music</div>--%>
+            <%--<div>Leader: John Kim</div>--%>
+            <%--<div>Members: 184</div>--%>
             <%--</div>--%>
-        <%--</div>--%>
+            <%--</div>--%>
+            <%--</div>--%>
+        </div>
     </div>
 </div>
 <jsp:include page="footer.jsp" />
@@ -66,8 +55,10 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        $('.nav.myMenu > li').bind('mouseover', openSubMenu);
-        $('.nav.myMenu > li').bind('mouseout', closeSubMenu);
+
+
+        $('#top-category-nav ul li').bind('mouseover', openSubMenu);
+        $('#top-category-nav ul li').bind('mouseout', closeSubMenu);
 
         function openSubMenu() {
             $(this).find('ul').css('visibility', 'visible');
@@ -78,7 +69,6 @@
         };
     });
 </script>
-
 </body>
 
 </html>
