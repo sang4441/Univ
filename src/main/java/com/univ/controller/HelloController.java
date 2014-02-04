@@ -1,5 +1,6 @@
 package com.univ.controller;
 
+import com.univ.model.Event;
 import com.univ.model.Group;
 import com.univ.model.User;
 import com.univ.services.GroupService;
@@ -23,6 +24,7 @@ import javax.servlet.http.HttpSession;
 public class HelloController {
     @Autowired GroupService groupService;
     @Autowired UserService userService;
+    @Autowired EventService eventService;
 
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
@@ -106,4 +108,23 @@ public class HelloController {
         groupService.insertGroup(group);
         return "redirect:/";
     }
+
+
+    @RequestMapping(value = "/create_event_form", method = RequestMethod.GET)
+    public ModelAndView eventForm(ModelMap model) {
+        return new ModelAndView("index", "content", "create_event_form");
+    }
+
+    @RequestMapping(value = "/create_event", method = RequestMethod.POST)
+    public String createEvent(@RequestParam("name") String name,
+                              @RequestParam("description") String description,
+                              @RequestParam("groupId") int groupId) {
+        Event event = new Event();
+        event.setName(name);
+        event.setDescription(description);
+        event.setGroup_id(groupId);
+        eventService.insertEvent(event);
+        return "redirect:/";
+    }
+
 }
