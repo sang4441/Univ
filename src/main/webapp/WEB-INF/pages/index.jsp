@@ -58,7 +58,7 @@
 
 
         $('#top-category-nav ul li').bind('mouseover', openSubMenu);
-        $('#top-category-nav > li').bind('mouseout', closeSubMenu);
+        $('#top-category-nav ul li').bind('mouseout', closeSubMenu);
 
         function openSubMenu() {
             $(this).find('ul').css('visibility', 'visible');

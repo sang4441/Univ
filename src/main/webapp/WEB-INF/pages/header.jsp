@@ -18,10 +18,10 @@
             </c:otherwise>
         </c:choose>
     </div>
-    <div class="span13">
-        <div class="span10 offset1">
-            <div id="top-category-nav">
-                <ul>
+    <div class="span12">
+        <div class="span10 offset1 navbar">
+            <div class="nav-collapse collapse" id="top-category-nav">
+                <ul class="nav myMenu">
                     <li class="top-category">
                         <a href="#">All</a>
                         <div class="category-dropdown">
@@ -40,11 +40,11 @@
                         <%--</ul>--%>
                     </li>
                     <li><a href="#">Arts & Music</a></li>
-                    <li><a href="#">Charitable, cummunity service</a></li>
+                    <li><a href="#">Charitable, cummunity</a></li>
                     <li><a href="#">Health</a></li>
-                    <li><a href="#">Learning & Academics & project</a></li>
-                    <li><a href="#">Entertainment & leisure & life style</a></li>
-                    <li><a href="#">Business, leadership, enterpreneur</a></li>
+                    <li><a href="#">Learning & Academics</a></li>
+                    <li><a href="#">Entertainment & leisure</a></li>
+                    <li><a href="#">Business, leadership</a></li>
                     <li><a href="#">Religion & Culture</a></li>
                 </ul>
             </div>

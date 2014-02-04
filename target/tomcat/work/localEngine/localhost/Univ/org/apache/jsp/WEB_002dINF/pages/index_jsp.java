@@ -131,7 +131,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("        $('#top-category-nav ul li').bind('mouseover', openSubMenu);\n");
-      out.write("        $('#top-category-nav > li').bind('mouseout', closeSubMenu);\n");
+      out.write("        $('#top-category-nav ul li').bind('mouseout', closeSubMenu);\n");
       out.write("\n");
       out.write("        function openSubMenu() {\n");
       out.write("            $(this).find('ul').css('visibility', 'visible');\n");
