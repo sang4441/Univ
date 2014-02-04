@@ -1,88 +1,143 @@
 <%--<div class="container-fluid">--%>
     <%--<div class="row-fluid">--%>
-        <div class="span7">
-            <div class="group-box">
-                <div class="group-create">Created: Jan-04-2014</div>
-                <div class="group-img">
-                    <img src="resources/img/effel.jpg" alt="effel tower">
-                </div>
-                <div class="group-info">
-                    <div class="group-name">A Capella Club</div>
-                    <div class="group-category">Category: Music</div>
-                    <div class="group-leader">Leader: John Kim</div>
-                    <div class="group-member">Members: 184 </div>
-                </div>
-            </div>
-            <!-- Second Category for SNS group -->
-            <div class="group-box">
-                <div class="group-create">Created: Jan-08-2014</div>
-                <div class="group-img">
-                    <img src="resources/img/facebook.jpg" alt="facebook">
-                </div>
-                <div class="group-info">
-                    <div class="group-name">Facebook</div>
-                    <div class="group-category">Category: SNS</div>
-                    <div class="group-leader">Leader: John Kim</div>
-                    <div class="group-member">Members: 234 </div>
-                </div>
-            </div>
-            <!-- Third Category for soccer -->
+        <div class="span1 offset2">
             <div>
-                <div class="group-box">
-                    <div class="group-create">Created: Jan-12-2014</div>
-                    <div class="group-img">
-                        <img src="resources/img/soccer.jpg" alt="soccer">
-                    </div>
-                    <div class="group-info">
-                        <div class="group-name">UW Warriors Soccer Team</div>
-                        <div class="group-category">Category: Sports</div>
-                        <div class="group-leader">Leader: Messi</div>
-                        <div class="group-member">Members: 3042 </div>
-                    </div>
+                <div class="left-nav-title">Others</div>
+                <div class="left-nav-list">
+                    <div>basketball(15)</div>
+                    <div>baseball(12)</div>
+                    <div>volleyball(3)</div>
+                    <div>hockey(1)</div>
+                    <div>example(5)</div>
                 </div>
+                <a href="#"><small>see more</small></a>
             </div>
-            <!-- Fourth Category for mma -->
+
+
+
             <div>
-                <div class="group-box">
-                    <div class="group-create">Created: Jan-12-2014</div>
-                    <div class="group-img">
-                        <img src="resources/img/mma.jpg" alt="mma">
-                    </div>
-                    <div class="group-info">
-                        <div class="group-name">Ultimate Fighting Club</div>
-                        <div class="group-category">Category: Sports</div>
-                        <div class="group-leader">Leader: Fedor</div>
-                        <div class="group-member">Members: 594 </div>
-                    </div>
-                </div>
+                <div class="left-nav-title">Open range</div>
+                <label class="checkbox">
+                    <input type="checkbox"> Public
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox"> Private
+                </label>
             </div>
+
             <div>
-                <div class="group-box">
-                    <div class="group-create">Created: Jan-12-2014</div>
-                    <div class="group-img">
-                        <img src="resources/img/medical.jpg" alt="medical">
-                    </div>
-                    <div class="group-info">
-                        <div class="group-name">Hospital Association</div>
-                        <div class="group-category">Category: Health</div>
-                        <div class="group-leader">Leader: god of gaw top</div>
-                        <div class="group-member">Members: 302 </div>
-                    </div>
-                </div>
+                <div class="left-nav-title">Applicable</div>
+                <label class="checkbox">
+                    <input type="checkbox"> open
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox"> closed
+                </label>
             </div>
+
+
+
+        </div>
+        <div class="span5">
+
             <div>
-                <div class="group-box">
-                    <div class="group-create">Created: Jan-12-2014</div>
-                    <div class="group-img">
-                        <img src="resources/img/hospital.jpg" alt="medical">
+                <ul>
+                    <li>
+                        <div id="group-content-header">
+                            <div id="group-navigation">University of Waterloo / Sports / Soccer</div>
+                            <div id="group-sort">
+                                Sort by
+                                <select class="span5">
+                                    <option value="1">Date</option>
+                                    <option value="2">Popularity</option>
+                                    <option value="2">Members</option>
+                                </select>
+                                <a class="btn btn-small"><i class=" icon-arrow-up"></i></a>
+                                <a class="btn btn-small"><i class=" icon-arrow-down"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><div class="group-box">
+
+                        <div class="group-img">
+                            <img src="resources/img/effel.jpg" alt="effel tower">
+                            </div>
+                            <div class="group-content">
+                                <div class="group-create">Created: Jan-04-2014</div>
+                                <div class="group-info">
+                                    <div class="group-name">A Capella Club</div>
+                                    <div class="group-category">Category: Music</div>
+                                    <div class="group-leader">Leader: John Kim</div>
+                                    <div class="group-member">Members: 184 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><div class="group-box">
+
+                        <div class="group-img">
+                            <img src="resources/img/effel.jpg" alt="effel tower">
+                            </div>
+                            <div class="group-content">
+                                <div class="group-create">Created: Jan-04-2014</div>
+                                <div class="group-info">
+                                    <div class="group-name">A Capella Club</div>
+                                    <div class="group-category">Category: Music</div>
+                                    <div class="group-leader">Leader: John Kim</div>
+                                    <div class="group-member">Members: 184 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><div class="group-box">
+
+                        <div class="group-img">
+                            <img src="resources/img/effel.jpg" alt="effel tower">
+                            </div>
+                            <div class="group-content">
+                                <div class="group-create">Created: Jan-04-2014</div>
+                                <div class="group-info">
+                                    <div class="group-name">A Capella Club</div>
+                                    <div class="group-category">Category: Music</div>
+                                    <div class="group-leader">Leader: John Kim</div>
+                                    <div class="group-member">Members: 184 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><div class="group-box">
+
+                        <div class="group-img">
+                            <img src="resources/img/effel.jpg" alt="effel tower">
+                        </div>
+                        <div class="group-content">
+                            <div class="group-create">Created: Jan-04-2014</div>
+                            <div class="group-info">
+                                <div class="group-name">A Capella Club</div>
+                                <div class="group-category">Category: Music</div>
+                                <div class="group-leader">Leader: John Kim</div>
+                                <div class="group-member">Members: 184 </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="group-info">
-                        <div class="group-name">Doctor Assembly</div>
-                        <div class="group-category">Category: Health</div>
-                        <div class="group-leader">Leader: god of gaw top</div>
-                        <div class="group-member">Members: 302 </div>
+                    </li>
+                    <li><div class="group-box">
+
+                        <div class="group-img">
+                            <img src="resources/img/effel.jpg" alt="effel tower">
+                        </div>
+                        <div class="group-content">
+                            <div class="group-create">Created: Jan-04-2014</div>
+                            <div class="group-info">
+                                <div class="group-name">A Capella Club</div>
+                                <div class="group-category">Category: Music</div>
+                                <div class="group-leader">Leader: John Kim</div>
+                                <div class="group-member">Members: 184 </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="span3">

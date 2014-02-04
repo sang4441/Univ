@@ -61,17 +61,56 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
 
       out.write("<!DOCTYPE HTML>\n");
+      out.write("\n");
+      out.write("\n");
       out.write("<div class=\"row-fluid\">\n");
-      out.write("    <div class=\"span8 offset4\">\n");
+      out.write("    <div class=\"span8 offset2\">\n");
       out.write("        <a href=\"/Univ\"><button class=\"btn\" type=\"button\">Home</button></a>\n");
-      out.write("        <input type=\"text\" placeholder=\"search\"/>\n");
+      out.write("        <input type=\"text\" class=\"span8\" placeholder=\"search\"/>\n");
       out.write("        <button class=\"btn\" type=\"button\">Search</button>\n");
       out.write("        ");
       if (_jspx_meth_c_005fchoose_005f0(_jspx_page_context))
         return;
       out.write("\n");
       out.write("    </div>\n");
+      out.write("    <div class=\"span13\">\n");
+      out.write("        <div class=\"span10 offset1\">\n");
+      out.write("            <div id=\"top-category-nav\">\n");
+      out.write("                <ul>\n");
+      out.write("                    <li class=\"top-category\">\n");
+      out.write("                        <a href=\"#\">All</a>\n");
+      out.write("                        <div class=\"category-dropdown\">\n");
+      out.write("                            <ul>\n");
+      out.write("                                <li><a href=\"\">test</a></li>\n");
+      out.write("                                <li><a href=\"\">test</a></li>\n");
+      out.write("                                <li><a href=\"\">test</a></li>\n");
+      out.write("                                <li><a href=\"\">test</a></li>\n");
+      out.write("                            </ul>\n");
+      out.write("                        </div>\n");
+      out.write("                    </li>\n");
+      out.write("                    <li class=\"top-category\"><a href=\"#\">Sports & athletic</a>\n");
+      out.write("                        ");
+      out.write("\n");
+      out.write("                            ");
+      out.write("\n");
+      out.write("                            ");
+      out.write("\n");
+      out.write("                        ");
+      out.write("\n");
+      out.write("                    </li>\n");
+      out.write("                    <li><a href=\"#\">Arts & Music</a></li>\n");
+      out.write("                    <li><a href=\"#\">Charitable, cummunity service</a></li>\n");
+      out.write("                    <li><a href=\"#\">Health</a></li>\n");
+      out.write("                    <li><a href=\"#\">Learning & Academics & project</a></li>\n");
+      out.write("                    <li><a href=\"#\">Entertainment & leisure & life style</a></li>\n");
+      out.write("                    <li><a href=\"#\">Business, leadership, enterpreneur</a></li>\n");
+      out.write("                    <li><a href=\"#\">Religion & Culture</a></li>\n");
+      out.write("                </ul>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("    </div>\n");
       out.write("</div>\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -126,7 +165,7 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.WhenTag _jspx_th_c_005fwhen_005f0 = (org.apache.taglibs.standard.tag.rt.core.WhenTag) _005fjspx_005ftagPool_005fc_005fwhen_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.WhenTag.class);
     _jspx_th_c_005fwhen_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fwhen_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fchoose_005f0);
-    // /WEB-INF/pages/header.jsp(8,12) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/header.jsp(10,12) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fwhen_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty sessionScope.user.email}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fwhen_005f0 = _jspx_th_c_005fwhen_005f0.doStartTag();
     if (_jspx_eval_c_005fwhen_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
