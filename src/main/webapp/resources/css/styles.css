@@ -183,9 +183,10 @@ button {
 }
 
 .see-all{
+    font-size: 12px;
+    text-decoration: underline;
     float:right;
     color:lightgrey;
-    font-weight:bolder;
 }
 
 .group-event{
@@ -196,6 +197,7 @@ button {
 }
 
 .event-head{
+    font-size: 15px;
     font-weight:bolder;
 }
 
@@ -209,38 +211,38 @@ button {
 }
 
 .group-event-schedule{
-    font-size:26px;
+    font-size:22px;
     float:left;
     font-weight:bolder;
     border:ridge;
-    padding:15px 25px 15px 25px;
+    padding:10px 15px 10px 15px;
     background-color:lightgrey;
 }
+.group-event-content {
+    padding-left: 10px;
+    height: 70px;
+}
 .group-event-clubname{
-    font-size:15px;
+    font-size:13px;
     color:skyblue;
     font-weight:bolder;
-    padding-left:120px;
 }
 
 .group-event-type{
-    padding-left:120px;
-    font-weight:bold;
+    font-size: 12px;
     color:grey;
 }
 
 .group-event-time{
-    padding-left:120px;
-    padding-top:15px;
+    font-size: 12px;
     color:grey;
 }
 
 .addition-li{
-    padding-bottom:10px;
+    text-align: center;
+    font-size: 15px;
     border-bottom:solid;
-    border-color:lightgrey;
     color:grey;
-    padding-left:180px;
 }
 
 .Suggestion{

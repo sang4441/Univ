@@ -22,7 +22,7 @@
         <div class="span10 offset1 navbar">
             <div class="nav-collapse collapse" id="top-category-nav">
                 <ul class="nav myMenu">
-                    <li class="top-category">
+                    <li>
                         <a href="#">All</a>
                         <div class="category-dropdown">
                             <ul>
@@ -33,12 +33,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="top-category"><a href="#">Sports & athletic</a>
-                        <%--<ul class="sub-category">--%>
-                            <%--<li><a href="Programmation.html">PROGRAMMATION</a></li>--%>
-                            <%--<li><a href="Reseautique.html">RÉSEAUTIQUE</a></li>--%>
-                        <%--</ul>--%>
-                    </li>
+                    <li><a href="#">Sports & athletic</a></li>
                     <li><a href="#">Arts & Music</a></li>
                     <li><a href="#">Charitable, cummunity</a></li>
                     <li><a href="#">Health</a></li>

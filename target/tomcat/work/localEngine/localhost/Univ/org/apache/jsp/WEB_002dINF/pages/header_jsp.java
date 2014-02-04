@@ -77,7 +77,7 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div class=\"span10 offset1 navbar\">\n");
       out.write("            <div class=\"nav-collapse collapse\" id=\"top-category-nav\">\n");
       out.write("                <ul class=\"nav myMenu\">\n");
-      out.write("                    <li class=\"top-category\">\n");
+      out.write("                    <li>\n");
       out.write("                        <a href=\"#\">All</a>\n");
       out.write("                        <div class=\"category-dropdown\">\n");
       out.write("                            <ul>\n");
@@ -88,16 +88,7 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            </ul>\n");
       out.write("                        </div>\n");
       out.write("                    </li>\n");
-      out.write("                    <li class=\"top-category\"><a href=\"#\">Sports & athletic</a>\n");
-      out.write("                        ");
-      out.write("\n");
-      out.write("                            ");
-      out.write("\n");
-      out.write("                            ");
-      out.write("\n");
-      out.write("                        ");
-      out.write("\n");
-      out.write("                    </li>\n");
+      out.write("                    <li><a href=\"#\">Sports & athletic</a></li>\n");
       out.write("                    <li><a href=\"#\">Arts & Music</a></li>\n");
       out.write("                    <li><a href=\"#\">Charitable, cummunity</a></li>\n");
       out.write("                    <li><a href=\"#\">Health</a></li>\n");

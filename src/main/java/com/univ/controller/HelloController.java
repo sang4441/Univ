@@ -5,6 +5,7 @@ import com.univ.model.Group;
 import com.univ.model.User;
 import com.univ.services.GroupService;
 import com.univ.services.UserService;
+import com.univ.services.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -120,7 +121,7 @@ public class HelloController {
                               @RequestParam("description") String description,
                               @RequestParam("groupId") int groupId) {
         Event event = new Event();
-        event.setName(name);
+        event.setTitle(name);
         event.setDescription(description);
         event.setGroup_id(groupId);
         eventService.insertEvent(event);

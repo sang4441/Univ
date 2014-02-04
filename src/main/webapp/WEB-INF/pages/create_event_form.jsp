@@ -7,20 +7,17 @@
     <h1>Event create!!!</h1>
 
 <form action="create_event" method="post">
-    <div><input type="text" name="name" placeholder="name"/></div>
+    <div><input type="text" name="title" placeholder="title"/></div>
     <div><textarea name="description" rows="4" cols="50" placeholder="description"></textarea></div>
-    <div>
-        <select name="groupId">
-            <option disabled>Choose category of your group</option>
-            <option value="2">Sports & athletic</option>
-            <option value="3">Arts & Music</option>
-            <option value="4">Charitable, cummunity service</option>
-            <option value="5">Health</option>
-            <option value="6">Learning & Academics & project</option>
-            <option value="7">Entertainment & leisure & life style</option>
-            <option value="8">Business, leadership, enterpreneur</option>
-            <option value="9">Religion & Culture</option>
-        </select>
-    </div>
+    <div><input type="text" name="location" placeholder="location"/></div>
+    <%--<div><input type="text" name="date" placeholder="date"</div>--%>
+    <label class="radio">
+        <input type="radio" name="public" id="optionsRadios1" value="public" checked>
+        public</label>
+    <label class="radio">
+        <input type="radio" name="private" id="optionsRadios2" value="private">
+        private
+    </label>
+    <div><input type="text" name="privacy" placeholder="privacy"></div>
     <div><input type="submit" value="Create event"></div>
 </form>

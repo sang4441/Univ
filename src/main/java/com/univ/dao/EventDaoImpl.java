@@ -1,5 +1,6 @@
 package com.univ.dao;
 
+import com.univ.model.Event;
 import com.univ.model.Group;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -15,14 +16,14 @@ public class EventDaoImpl implements EventDao{
 
     public void insertData(Event event) {
 
-        String sql = "INSERT INTO events (name, description, group_id) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO events (group_id, title, description,location, privacy_level) VALUES (?, ?, ?, ?, ?)";
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 
         jdbcTemplate.update(
                 sql,
-                new Object[] { event.getName(), event.getDescription(),
-                        event.getGroup_id() });
+                new Object[] { event.getGroup_id(), event.getTitle(),
+                        event.getDescription(), event.getLocation(), event.getPrivacy_level() });
     }
 }
 

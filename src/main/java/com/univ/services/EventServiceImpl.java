@@ -1,12 +1,15 @@
 package com.univ.services;
 
+import com.univ.dao.EventDao;
 import com.univ.dao.GroupDao;
+import com.univ.model.Event;
 import com.univ.model.Group;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class EventServiceImpl implements EventService {
 
-    @Autowired EventDao eventDao;
+    @Autowired
+    EventDao eventDao;
 
     @Override
     public void insertEvent(Event event) {
