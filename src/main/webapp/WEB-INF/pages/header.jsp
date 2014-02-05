@@ -24,7 +24,7 @@
             <div class="nav-collapse collapse" id="top-category-nav">
                 <ul class="nav myMenu">
                     <li>
-                        <a href="1">All</a>
+                        <a href="category/1">All</a>
                         <div class="category-dropdown">
                             <ul>
                                 <li><a href="">test</a></li>
@@ -34,14 +34,14 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="2">Sports & athletic</a></li>
-                    <li><a href="3">Arts & Music</a></li>
-                    <li><a href="4">Charitable, cummunity</a></li>
-                    <li><a href="5">Health</a></li>
-                    <li><a href="6">Learning & Academics</a></li>
-                    <li><a href="7">Entertainment & leisure</a></li>
-                    <li><a href="8">Business, leadership</a></li>
-                    <li><a href="9">Religion & Culture</a></li>
+                    <li><a href="category/2">Sports & athletic</a></li>
+                    <li><a href="category/3">Arts & Music</a></li>
+                    <li><a href="category/4">Charitable, cummunity</a></li>
+                    <li><a href="category/5">Health</a></li>
+                    <li><a href="category/6">Learning & Academics</a></li>
+                    <li><a href="category/7">Entertainment & leisure</a></li>
+                    <li><a href="category/8">Business, leadership</a></li>
+                    <li><a href="category/9">Religion & Culture</a></li>
                 </ul>
             </div>
         </div>

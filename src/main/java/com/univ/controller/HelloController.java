@@ -128,7 +128,7 @@ public class HelloController {
         return "redirect:/";
     }
 
-    @RequestMapping(value = "{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "category/{id}", method = RequestMethod.GET)
     public String groupPage(ModelMap model, @PathVariable int id) {
 
         List<Group> groups = groupService.findGroupByCategoryId(id);

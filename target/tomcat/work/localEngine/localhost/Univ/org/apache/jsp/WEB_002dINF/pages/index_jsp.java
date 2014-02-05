@@ -69,12 +69,15 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\n");
       out.write("<head>\n");
       out.write("    <title>Univ</title>\n");
-      out.write("    <link rel=\"stylesheet\" href=\"resources/css/styles.css\" />\n");
-      out.write("    <link rel=\"stylesheet\" href=\"resources/css/bootstrap.min.css\" />\n");
+      out.write("    <link rel=\"stylesheet\" href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/css/styles.css\" />\n");
+      out.write("    <link rel=\"stylesheet\" href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/css/bootstrap.min.css\" />\n");
       out.write("</head>\n");
       out.write("\n");
       out.write("<body>\n");
-      out.write("\n");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "header.jsp", out, false);
       out.write("\n");
       out.write("<div id=\"content-body\">\n");
@@ -115,16 +118,34 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "footer.jsp", out, false);
       out.write("\n");
       out.write("\n");
-      out.write("<script src=\"resources/lib/jquery-1.7.1.min.js\"></script>\n");
-      out.write("<script src=\"resources/lib/underscore-min.js\"></script>\n");
-      out.write("<script src=\"resources/lib/backbone-min.js\"></script>\n");
-      out.write("<script src=\"resources/lib/bootstrap.min.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/lib/jquery-1.7.1.min.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/lib/underscore-min.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/lib/backbone-min.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/lib/bootstrap.min.js\"></script>\n");
       out.write("\n");
-      out.write("<script src=\"resources/js/utils.js\"></script>\n");
-      out.write("<script src=\"resources/js/models/clubmodel.js\"></script>\n");
-      out.write("<script src=\"resources/js/views/header.js\"></script>\n");
-      out.write("<script src=\"resources/js/views/clublist.js\"></script>\n");
-      out.write("<script src=\"resources/js/main.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/js/utils.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/js/models/clubmodel.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/js/views/header.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/js/views/clublist.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/js/main.js\"></script>\n");
       out.write("\n");
       out.write("<script type=\"text/javascript\">\n");
       out.write("    $(document).ready(function() {\n");
@@ -203,7 +224,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.WhenTag _jspx_th_c_005fwhen_005f0 = (org.apache.taglibs.standard.tag.rt.core.WhenTag) _005fjspx_005ftagPool_005fc_005fwhen_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.WhenTag.class);
     _jspx_th_c_005fwhen_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fwhen_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fchoose_005f0);
-    // /WEB-INF/pages/index.jsp(21,16) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/index.jsp(20,16) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fwhen_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty content}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fwhen_005f0 = _jspx_th_c_005fwhen_005f0.doStartTag();
     if (_jspx_eval_c_005fwhen_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -238,10 +259,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fwhen_005f0);
-    // /WEB-INF/pages/index.jsp(22,20) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/index.jsp(21,20) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setVar("content");
-    // /WEB-INF/pages/index.jsp(22,20) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/index.jsp(22,20) '${content}.jsp'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${content}.jsp",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/pages/index.jsp(21,20) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/index.jsp(21,20) '${content}.jsp'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${content}.jsp",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
     if (_jspx_th_c_005fset_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f0);

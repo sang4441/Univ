@@ -113,7 +113,9 @@ public final class body_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <li><div class=\"group-box\">\n");
       out.write("\n");
       out.write("                        <div class=\"group-img\">\n");
-      out.write("                            <img src=\"resources/img/effel.jpg\" alt=\"effel tower\">\n");
+      out.write("                            <img src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/effel.jpg\" alt=\"effel tower\">\n");
       out.write("                            </div>\n");
       out.write("                            <div class=\"group-content\">\n");
       out.write("                                <div class=\"group-create\">Created: Jan-04-2014</div>\n");
@@ -129,7 +131,9 @@ public final class body_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <li><div class=\"group-box\">\n");
       out.write("\n");
       out.write("                        <div class=\"group-img\">\n");
-      out.write("                            <img src=\"resources/img/effel.jpg\" alt=\"effel tower\">\n");
+      out.write("                            <img src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/effel.jpg\" alt=\"effel tower\">\n");
       out.write("                            </div>\n");
       out.write("                            <div class=\"group-content\">\n");
       out.write("                                <div class=\"group-create\">Created: Jan-04-2014</div>\n");
@@ -145,7 +149,9 @@ public final class body_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <li><div class=\"group-box\">\n");
       out.write("\n");
       out.write("                        <div class=\"group-img\">\n");
-      out.write("                            <img src=\"resources/img/effel.jpg\" alt=\"effel tower\">\n");
+      out.write("                            <img src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/effel.jpg\" alt=\"effel tower\">\n");
       out.write("                            </div>\n");
       out.write("                            <div class=\"group-content\">\n");
       out.write("                                <div class=\"group-create\">Created: Jan-04-2014</div>\n");
@@ -161,7 +167,9 @@ public final class body_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <li><div class=\"group-box\">\n");
       out.write("\n");
       out.write("                        <div class=\"group-img\">\n");
-      out.write("                            <img src=\"resources/img/effel.jpg\" alt=\"effel tower\">\n");
+      out.write("                            <img src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/effel.jpg\" alt=\"effel tower\">\n");
       out.write("                        </div>\n");
       out.write("                        <div class=\"group-content\">\n");
       out.write("                            <div class=\"group-create\">Created: Jan-04-2014</div>\n");
@@ -177,7 +185,9 @@ public final class body_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <li><div class=\"group-box\">\n");
       out.write("\n");
       out.write("                        <div class=\"group-img\">\n");
-      out.write("                            <img src=\"resources/img/effel.jpg\" alt=\"effel tower\">\n");
+      out.write("                            <img src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/effel.jpg\" alt=\"effel tower\">\n");
       out.write("                        </div>\n");
       out.write("                        <div class=\"group-content\">\n");
       out.write("                            <div class=\"group-create\">Created: Jan-04-2014</div>\n");

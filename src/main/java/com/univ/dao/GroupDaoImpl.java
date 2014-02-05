@@ -39,7 +39,7 @@ public class GroupDaoImpl implements GroupDao{
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 //        List<Group> groups = new ArrayList<Group>();
 
-        List<Group> group  = jdbcTemplate.query(sql,
+        List<Group> group  = jdbcTemplate.query(sql, new Object[id],
                 new BeanPropertyRowMapper(Group.class));
 //        List<Group> rows = jdbcTemplate.queryForList(sql, new Object[]{id});
 //        for (Map row : rows) {

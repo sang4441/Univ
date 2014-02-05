@@ -60,7 +60,7 @@
                     <li><div class="group-box">
 
                         <div class="group-img">
-                            <img src="resources/img/effel.jpg" alt="effel tower">
+                            <img src="${pageContext.request.contextPath}/resources/img/effel.jpg" alt="effel tower">
                             </div>
                             <div class="group-content">
                                 <div class="group-create">Created: Jan-04-2014</div>
@@ -76,7 +76,7 @@
                     <li><div class="group-box">
 
                         <div class="group-img">
-                            <img src="resources/img/effel.jpg" alt="effel tower">
+                            <img src="${pageContext.request.contextPath}/resources/img/effel.jpg" alt="effel tower">
                             </div>
                             <div class="group-content">
                                 <div class="group-create">Created: Jan-04-2014</div>
@@ -92,7 +92,7 @@
                     <li><div class="group-box">
 
                         <div class="group-img">
-                            <img src="resources/img/effel.jpg" alt="effel tower">
+                            <img src="${pageContext.request.contextPath}/resources/img/effel.jpg" alt="effel tower">
                             </div>
                             <div class="group-content">
                                 <div class="group-create">Created: Jan-04-2014</div>
@@ -108,7 +108,7 @@
                     <li><div class="group-box">
 
                         <div class="group-img">
-                            <img src="resources/img/effel.jpg" alt="effel tower">
+                            <img src="${pageContext.request.contextPath}/resources/img/effel.jpg" alt="effel tower">
                         </div>
                         <div class="group-content">
                             <div class="group-create">Created: Jan-04-2014</div>
@@ -124,7 +124,7 @@
                     <li><div class="group-box">
 
                         <div class="group-img">
-                            <img src="resources/img/effel.jpg" alt="effel tower">
+                            <img src="${pageContext.request.contextPath}/resources/img/effel.jpg" alt="effel tower">
                         </div>
                         <div class="group-content">
                             <div class="group-create">Created: Jan-04-2014</div>

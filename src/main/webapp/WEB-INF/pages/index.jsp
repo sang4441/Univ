@@ -4,12 +4,11 @@
 <html>
 <head>
     <title>Univ</title>
-    <link rel="stylesheet" href="resources/css/styles.css" />
-    <link rel="stylesheet" href="resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/styles.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" />
 </head>
 
 <body>
-
 <jsp:include page="header.jsp" />
 <div id="content-body">
     <div class="container-fluid">
@@ -42,16 +41,16 @@
 </div>
 <jsp:include page="footer.jsp" />
 
-<script src="resources/lib/jquery-1.7.1.min.js"></script>
-<script src="resources/lib/underscore-min.js"></script>
-<script src="resources/lib/backbone-min.js"></script>
-<script src="resources/lib/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/lib/jquery-1.7.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/lib/underscore-min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/lib/backbone-min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/lib/bootstrap.min.js"></script>
 
-<script src="resources/js/utils.js"></script>
-<script src="resources/js/models/clubmodel.js"></script>
-<script src="resources/js/views/header.js"></script>
-<script src="resources/js/views/clublist.js"></script>
-<script src="resources/js/main.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/utils.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/models/clubmodel.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/views/header.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/views/clublist.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {
