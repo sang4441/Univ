@@ -54,10 +54,7 @@ public final class create_005fevent_005fform_jsp extends org.apache.jasper.runti
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("    <h1>Event create!!!</h1>\n");
-      out.write("\n");
+      out.write("<h1>Event create</h1>\n");
       out.write("<form action=\"create_event\" method=\"post\">\n");
       out.write("    <div><input type=\"text\" name=\"title\" placeholder=\"title\"/></div>\n");
       out.write("    <div><textarea name=\"description\" rows=\"4\" cols=\"50\" placeholder=\"description\"></textarea></div>\n");
@@ -65,13 +62,11 @@ public final class create_005fevent_005fform_jsp extends org.apache.jasper.runti
       out.write("    ");
       out.write("\n");
       out.write("    <label class=\"radio\">\n");
-      out.write("        <input type=\"radio\" name=\"public\" id=\"optionsRadios1\" value=\"public\" checked>\n");
-      out.write("        public</label>\n");
-      out.write("    <label class=\"radio\">\n");
-      out.write("        <input type=\"radio\" name=\"private\" id=\"optionsRadios2\" value=\"private\">\n");
-      out.write("        private\n");
+      out.write("        <input type=\"radio\" name=\"privacy_level\" id=\"optionsRadios1\" value=\"1\" checked>\n");
+      out.write("        public\n");
       out.write("    </label>\n");
-      out.write("    <div><input type=\"text\" name=\"privacy\" placeholder=\"privacy\"></div>\n");
+      out.write("    ");
+      out.write("\n");
       out.write("    <div><input type=\"submit\" value=\"Create event\"></div>\n");
       out.write("</form>");
     } catch (Throwable t) {

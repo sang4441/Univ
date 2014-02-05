@@ -34,8 +34,6 @@ public class UserDaoImpl implements UserDao{
         String sql = "SELECT * FROM user where email = ?";
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-//        jdbcTemplate.
-
 
         List<User> users = jdbcTemplate.query(sql, new Object[]{email}, new BeanPropertyRowMapper(User.class));
         if (users.size() < 1) {

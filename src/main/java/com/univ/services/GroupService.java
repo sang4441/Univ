@@ -2,10 +2,14 @@ package com.univ.services;
 
 import com.univ.model.Group;
 
+import java.util.List;
+
 /**
  * Created by kimsanghwan on 1/28/2014.
  */
 public interface GroupService {
 
     public void insertGroup(Group group);
+
+    public List<Group> findGroupByCategoryId(int id);
 }

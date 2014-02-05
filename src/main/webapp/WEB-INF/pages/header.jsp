@@ -10,6 +10,7 @@
             <c:when test="${not empty sessionScope.user.email}">
                 Hi ${user.email}
                 <a href="create_group_form"><button class="btn" type="button">Create Group</button></a>
+                <a href="create_event_form"><button class="btn" type="button">Create Event</button></a>
                 <a href="log_out"><button class="btn" type="button">Log Out</button></a>
             </c:when>
             <c:otherwise>
@@ -23,7 +24,7 @@
             <div class="nav-collapse collapse" id="top-category-nav">
                 <ul class="nav myMenu">
                     <li>
-                        <a href="#">All</a>
+                        <a href="1">All</a>
                         <div class="category-dropdown">
                             <ul>
                                 <li><a href="">test</a></li>
@@ -33,14 +34,14 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#">Sports & athletic</a></li>
-                    <li><a href="#">Arts & Music</a></li>
-                    <li><a href="#">Charitable, cummunity</a></li>
-                    <li><a href="#">Health</a></li>
-                    <li><a href="#">Learning & Academics</a></li>
-                    <li><a href="#">Entertainment & leisure</a></li>
-                    <li><a href="#">Business, leadership</a></li>
-                    <li><a href="#">Religion & Culture</a></li>
+                    <li><a href="2">Sports & athletic</a></li>
+                    <li><a href="3">Arts & Music</a></li>
+                    <li><a href="4">Charitable, cummunity</a></li>
+                    <li><a href="5">Health</a></li>
+                    <li><a href="6">Learning & Academics</a></li>
+                    <li><a href="7">Entertainment & leisure</a></li>
+                    <li><a href="8">Business, leadership</a></li>
+                    <li><a href="9">Religion & Culture</a></li>
                 </ul>
             </div>
         </div>

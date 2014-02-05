@@ -1,5 +1,6 @@
 package com.univ.controller;
 
+import java.util.List;
 import com.univ.model.Event;
 import com.univ.model.Group;
 import com.univ.model.User;
@@ -10,10 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.Cookie;
@@ -117,15 +115,25 @@ public class HelloController {
     }
 
     @RequestMapping(value = "/create_event", method = RequestMethod.POST)
-    public String createEvent(@RequestParam("name") String name,
+    public String createEvent(@RequestParam("title") String title,
                               @RequestParam("description") String description,
-                              @RequestParam("groupId") int groupId) {
+                              @RequestParam("location") String location,
+                              @RequestParam("privacy_level") int privacy_level)  {
         Event event = new Event();
-        event.setTitle(name);
+        event.setTitle(title);
         event.setDescription(description);
-        event.setGroup_id(groupId);
+        event.setLocation(location);
+        event.setPrivacy_level(privacy_level);
         eventService.insertEvent(event);
         return "redirect:/";
     }
 
+    @RequestMapping(value = "{id}", method = RequestMethod.GET)
+    public String groupPage(ModelMap model, @PathVariable int id) {
+
+        List<Group> groups = groupService.findGroupByCategoryId(id);
+        model.addAttribute("groups", groups);
+
+        return "index";
+    }
 }
