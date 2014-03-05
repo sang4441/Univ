@@ -15,12 +15,32 @@ public class GroupServiceImpl implements GroupService {
     GroupDao groupDao;
 
     @Override
+    public void createGroup(Group group, int userId) {
+        groupDao.insertGroupData(group, userId, true);
+    }
+
+    @Override
     public void insertGroup(Group group) {
-        groupDao.insertData(group);
+//        groupDao.insertGroupData(group);
     }
 
     @Override
     public List<Group> findGroupByCategoryId(int id) {
-        return groupDao.getGroupById(id);
+        return groupDao.getGroupByCategoryId(id);
+    }
+
+    @Override
+    public List<Group> findGroupByUserId(int id) {
+        return groupDao.getGroupByUserId(id);
+    }
+
+    @Override
+    public Group findGroupByGroupId(int id) {
+        return groupDao.getGroupByGroupId(id);
+    }
+
+    @Override
+    public boolean isUserAdmin(int groupId, int userId) {
+        return groupDao.getAdminStatus(groupId, userId);
     }
 }

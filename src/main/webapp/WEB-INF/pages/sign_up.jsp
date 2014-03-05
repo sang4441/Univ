@@ -2,7 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
-	<h1>sign up pagae</h1>
+	<h1>sign up</h1>
 
 <form method="post" action="create_user">
 

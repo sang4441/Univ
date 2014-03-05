@@ -1,20 +1,30 @@
 package com.univ.model;
 
+import java.util.Date;
+
 /**
  * Created by bhj0308 on 2014. 1. 30..
  */
 public class Event {
     private int id;
 
-    private String title;
-
-    private int privacy_level;
-
-    private String location;
+    private String name;
 
     private String description;
 
+    private String location;
+
+    private Date date_event;
+
+    private Date date_created;
+
+    private Date date_modified;
+
     private int group_id;
+
+    private int type_id;
+
+    private int created_by;
 
     public int getId() {
         return id;
@@ -24,28 +34,12 @@ public class Event {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public int getPrivacy_level() {
-        return privacy_level;
-    }
-
-    public void setPrivacy_level(int privacy_level) {
-        this.privacy_level = privacy_level;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
@@ -56,6 +50,38 @@ public class Event {
         this.description = description;
     }
 
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Date getDate_event() {
+        return date_event;
+    }
+
+    public void setDate_event(Date date_event) {
+        this.date_event = date_event;
+    }
+
+    public Date getDate_created() {
+        return date_created;
+    }
+
+    public void setDate_created(Date date_created) {
+        this.date_created = date_created;
+    }
+
+    public Date getDate_modified() {
+        return date_modified;
+    }
+
+    public void setDate_modified(Date date_modified) {
+        this.date_modified = date_modified;
+    }
+
     public int getGroup_id() {
         return group_id;
     }
@@ -64,4 +90,19 @@ public class Event {
         this.group_id = group_id;
     }
 
+    public int getType_id() {
+        return type_id;
+    }
+
+    public void setType_id(int type_id) {
+        this.type_id = type_id;
+    }
+
+    public int getCreated_by() {
+        return created_by;
+    }
+
+    public void setCreated_by(int created_by) {
+        this.created_by = created_by;
+    }
 }

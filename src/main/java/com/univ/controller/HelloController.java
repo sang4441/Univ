@@ -1,9 +1,16 @@
 package com.univ.controller;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
+
+import com.univ.model.Category;
 import com.univ.model.Event;
 import com.univ.model.Group;
 import com.univ.model.User;
+import com.univ.services.CategoryService;
 import com.univ.services.GroupService;
 import com.univ.services.UserService;
 import com.univ.services.EventService;
@@ -24,13 +31,21 @@ public class HelloController {
     @Autowired GroupService groupService;
     @Autowired UserService userService;
     @Autowired EventService eventService;
+    @Autowired CategoryService categoryService;
+
 
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String printWelcome(ModelMap model) {
-		model.addAttribute("message", "Hello world!");
-		return "index";
-	}
+     public String printWelcome(ModelMap model) {
+        List<Category> categories = categoryService.findTopCategories();
+        model.addAttribute("categories", categories);
+        return "index";
+    }
+
+    @RequestMapping(value = "/club", method = RequestMethod.GET)
+    public ModelAndView findClub(ModelMap model) {
+        return new ModelAndView("index", "content", "find_club");
+    }
 
     @RequestMapping(value = "/sign_up_page", method = RequestMethod.GET)
     public ModelAndView signUp(ModelMap model) {
@@ -76,8 +91,9 @@ public class HelloController {
         } else {
             return new ModelAndView("redirect:sign_in_page", "err", "Login unsuccessful");
         }
-        return new ModelAndView("redirect:/", "user", user);
+        return new ModelAndView("redirect:/profile/"+user.getId(), "user", user);
     }
+
 
     @RequestMapping(value = "/log_out", method = RequestMethod.GET)
     public String logOut(
@@ -90,50 +106,100 @@ public class HelloController {
 
     @RequestMapping(value = "/create_group_form", method = RequestMethod.GET)
     public ModelAndView groupForm(ModelMap model) {
+
+        List<Category> categories = categoryService.findTopCategories();
+
+        model.addAttribute("categories", categories);
         return new ModelAndView("index", "content", "create_group_form");
     }
 
     @RequestMapping(value = "/create_group", method = RequestMethod.POST)
 //    public String create_group(@ModelAttribute("group") Group group) {
-    public String createGroup(@RequestParam("name") String name,
+    public String createGroup(HttpServletRequest request,
+                              @RequestParam("name") String name,
                               @RequestParam("description") String description,
                               @RequestParam("typeId") int typeId,
                               @RequestParam("categoryId") int categoryId) {
+        HttpSession session = request.getSession();
         Group group = new Group();
         group.setName(name);
         group.setDescription(description);
-        group.setTypeId(typeId);
+        group.setType_id(typeId);
         group.setCategory_id(categoryId);
-        groupService.insertGroup(group);
+        group.setDate_created(new Date());
+        User user = (User)session.getAttribute("user");
+        group.setCreated_by(user.getId());
+        groupService.createGroup(group, user.getId());
         return "redirect:/";
     }
 
+    @RequestMapping(value = "/profile/{id}", method = RequestMethod.GET)
+    public ModelAndView profilePage(ModelMap model, @PathVariable int id) {
 
-    @RequestMapping(value = "/create_event_form", method = RequestMethod.GET)
-    public ModelAndView eventForm(ModelMap model) {
-        return new ModelAndView("index", "content", "create_event_form");
+        List<Group> myGroups = groupService.findGroupByUserId(id);
+        model.addAttribute("myGroups", myGroups);
+        return new ModelAndView("index", "content", "profile");
     }
 
-    @RequestMapping(value = "/create_event", method = RequestMethod.POST)
-    public String createEvent(@RequestParam("title") String title,
+    @RequestMapping(value = "/group/{id}", method = RequestMethod.GET)
+    public ModelAndView groupPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
+
+        HttpSession session = request.getSession();
+        User user = (User)session.getAttribute("user");
+        boolean isUserAdmin = groupService.isUserAdmin(id, user.getId());
+        if (isUserAdmin) {
+            model.addAttribute("isAdmin", true);
+        } else {
+            model.addAttribute("isAdmin", false);
+        }
+        Group group = groupService.findGroupByUserId()
+        return new ModelAndView("index", "content", "group");
+    }
+
+    @RequestMapping(value = "/create_event_form", method = RequestMethod.GET)
+    public String eventForm(ModelMap model) {
+        return "create_event_form";
+    }
+
+    @RequestMapping(value = "create_event", method = RequestMethod.POST)
+    public String createEvent(HttpServletRequest request,
+                              @RequestParam("name") String name,
                               @RequestParam("description") String description,
                               @RequestParam("location") String location,
-                              @RequestParam("privacy_level") int privacy_level)  {
+                              @RequestParam("event_type") int eventType,
+                              @RequestParam("event_date") String eventDate) throws ParseException {
+        HttpSession session = request.getSession();
+        User user = (User)session.getAttribute("user");
         Event event = new Event();
-        event.setTitle(title);
+        event.setName(name);
         event.setDescription(description);
         event.setLocation(location);
-        event.setPrivacy_level(privacy_level);
+        event.setType_id(eventType);
+        event.setGroup_id(7);
+        event.setDate_event(new SimpleDateFormat("MM/dd/yyyy").parse(eventDate));
+        event.setDate_created(new Date());
+        event.setCreated_by(user.getId());
         eventService.insertEvent(event);
         return "redirect:/";
     }
 
     @RequestMapping(value = "category/{id}", method = RequestMethod.GET)
-    public String groupPage(ModelMap model, @PathVariable int id) {
+    public ModelAndView groupPages(ModelMap model, @PathVariable int id) {
 
         List<Group> groups = groupService.findGroupByCategoryId(id);
-        model.addAttribute("groups", groups);
+//        for(Group group : groups) {
+//            User user = userService.findUserById(group.getLeaderId());
+//            group
+//        }
+        List<Event> events = eventService.findEventByCategoryId(id);
+        List<Category> subCategories = categoryService.findChildCategoryById(id);
+        List<Category> categories = categoryService.findTopCategories();
 
-        return "index";
+        model.addAttribute("categories", categories);
+        model.addAttribute("groups", groups);
+        model.addAttribute("events", events);
+        model.addAttribute("subCategories", subCategories);
+
+        return new ModelAndView("index", "content", "find_club");
     }
 }

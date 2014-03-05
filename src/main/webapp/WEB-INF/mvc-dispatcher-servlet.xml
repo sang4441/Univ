@@ -25,13 +25,16 @@
     <!-- declare beans -->
     <bean
             class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
-    <bean id="userDao" class="com.univ.dao.UserDaoImpl" />
+    <bean id="userDao" class="com.univ.dao.UserDao" />
     <bean id="user" class="com.univ.model.User" />
     <bean id="userService" class="com.univ.services.UserServiceImpl" />
-    <bean id="groupDao" class="com.univ.dao.GroupDaoImpl" />
+    <bean id="groupDao" class="com.univ.dao.GroupDao" />
     <bean id="group" class="com.univ.model.Group" />
     <bean id="groupService" class="com.univ.services.GroupServiceImpl" />
-    <bean id="eventDao" class="com.univ.dao.EventDaoImpl" />
+    <bean id="categoryDao" class="com.univ.dao.CategoryDao" />
+    <bean id="category" class="com.univ.model.Category" />
+    <bean id="categoryService" class="com.univ.services.CategoryServiceImpl" />
+    <bean id="eventDao" class="com.univ.dao.EventDao" />
     <bean id="event" class="com.univ.model.Event" />
     <bean id="eventService" class="com.univ.services.EventServiceImpl" />
     <!--<bean id="userService" class="com.univ.services.UserServiceImpl" />-->

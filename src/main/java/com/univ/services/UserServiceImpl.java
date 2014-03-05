@@ -1,7 +1,7 @@
 package com.univ.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import com.univ.dao.UserDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import com.univ.model.User;
 
 /**
@@ -20,5 +20,10 @@ public class UserServiceImpl implements UserService{
     @Override
     public User findUserByEmail(String email) {
         return userdao.getUserByEmail(email);
+    }
+
+    @Override
+    public User findUserById(int id) {
+        return userdao.getUserById(id);
     }
 }
