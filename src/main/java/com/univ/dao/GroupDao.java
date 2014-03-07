@@ -77,9 +77,10 @@ public class GroupDao {
     public Group getGroupByGroupId(int id) {
         String sql = "SELECT * FROM groups where id = ?";
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-        Group group = jdbcTemplate.queryForObject(
+        Group group = (Group)jdbcTemplate.queryForObject(
                 sql,
-                new Object[] {id}, Group.class);
+                new Object[]{id},
+                new BeanPropertyRowMapper(Group.class));
         return group;
     }
 

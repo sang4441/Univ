@@ -63,7 +63,9 @@ public final class sign_005fin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("<h1>Sign In</h1>\n");
-      out.write("<form method=\"post\" action=\"signin\">\n");
+      out.write("<form method=\"post\" action=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/signin\">\n");
       out.write("    <div><input type=\"text\" name=\"email\" placeholder=\"email\"/></div>\n");
       out.write("    <div><input type=\"password\" name=\"password\" placeholder=\"password\"/></div>\n");
       out.write("    <div><input type=\"submit\" value=\"Sign In\"></div>\n");

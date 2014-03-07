@@ -4,7 +4,7 @@
 
 
 <h1>Sign In</h1>
-<form method="post" action="signin">
+<form method="post" action="${pageContext.request.contextPath}/signin">
     <div><input type="text" name="email" placeholder="email"/></div>
     <div><input type="password" name="password" placeholder="password"/></div>
     <div><input type="submit" value="Sign In"></div>

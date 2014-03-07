@@ -20,4 +20,14 @@ public class EventServiceImpl implements EventService {
     public List<Event> findEventByCategoryId(int id) {
         return eventDao.getEventByCategoryID(id);
     }
+
+    @Override
+    public List<Event> findEventbyUserId(int id) {
+        return eventDao.getEventByUserId(id);
+    }
+
+    @Override
+    public List<Event> findEventByGroupId(int id) {
+        return eventDao.getEventByGroupId(id);
+    }
 }

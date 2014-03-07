@@ -11,8 +11,6 @@ public final class group_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fif_0026_005ftest;
-
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
 
@@ -21,13 +19,11 @@ public final class group_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -56,15 +52,192 @@ public final class group_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n");
       out.write("\n");
-      out.write("<div class=\"row-fluid\">\n");
-      out.write("    <div class=\"span8 offset2\">\n");
-      out.write("        ");
-      if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
-        return;
       out.write("\n");
-      out.write("        <div><button>Invite members</button></div>\n");
-      out.write("    </div>\n");
+      out.write("<div class=\"content-left\">\n");
+      out.write("    <ul class=\"nav-left\">\n");
+      out.write("        <li><a><img width=\"299px\" src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/waterloo_logo.png\" alt=\"effel tower\"></a></li>\n");
+      out.write("        <li class=\"nav-left-menu\"><a href=\"#\">UW Act</a></li>\n");
+      out.write("        <li class=\"nav-left-menu\"><a href=\"#\">Meeting/Events</a></li>\n");
+      out.write("        <li class=\"nav-left-menu\"><a href=\"#\">Images/Videos</a></li>\n");
+      out.write("        <li class=\"nav-left-menu\"><a href=\"#\">Chat</a></li>\n");
+      out.write("        <li class=\"nav-left-menu active\"><a href=\"#\">Members</a></li>\n");
+      out.write("    </ul>\n");
       out.write("</div>\n");
+      out.write("<div class=\"content-right\">\n");
+      out.write("    <div>About</div>\n");
+      out.write("    <div>Meeting</div>\n");
+      out.write("        <div class=\"event-wrap\">\n");
+      out.write("            <div class=\"event-content\">\n");
+      out.write("                <div class=\"event-img\">\n");
+      out.write("                    <img width=\"40px\" height=\"40px \" src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/waterloo_logo.png\"> UW act\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"event-name\">Meeting name: Event name</div>\n");
+      out.write("                <div class=\"event-description\">Description: My description</div>\n");
+      out.write("                <div class=\"event-location\">Location: RCH 301</div>\n");
+      out.write("                <div class=\"event-created-time\">10 hours ago</div>\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"event-date-wrap\">\n");
+      out.write("                <div class=\"event-date-container\">\n");
+      out.write("                    <div class=\"event-month-year\"><span class=\"event-month\">Jan</span><span class=\"event-year\">'14</span></div>\n");
+      out.write("                    <div class=\"event-day\">7th</div>\n");
+      out.write("                    <div class=\"event-time\">8:00 pm</div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"event-wrap\">\n");
+      out.write("            <div class=\"event-content\">\n");
+      out.write("                <div class=\"event-img\">\n");
+      out.write("                    <img width=\"40px\" height=\"40px \" src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/waterloo_logo.png\"> UW act\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"event-name\">Meeting name: Event name</div>\n");
+      out.write("                <div class=\"event-description\">Description: My description</div>\n");
+      out.write("                <div class=\"event-location\">Location: RCH 301</div>\n");
+      out.write("                <div class=\"event-created-time\">10 hours ago</div>\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"event-date-wrap\">\n");
+      out.write("                <div class=\"event-date-container\">\n");
+      out.write("                    <div class=\"event-month-year\"><span class=\"event-month\">Jan</span><span class=\"event-year\">'14</span></div>\n");
+      out.write("                    <div class=\"event-day\">7th</div>\n");
+      out.write("                    <div class=\"event-time\">8:00 pm</div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"event-wrap\">\n");
+      out.write("            <div class=\"event-content\">\n");
+      out.write("                <div class=\"event-img\">\n");
+      out.write("                    <img width=\"40px\" height=\"40px \" src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/waterloo_logo.png\"> UW act\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"event-name\">Meeting name: Event name</div>\n");
+      out.write("                <div class=\"event-description\">Description: My description</div>\n");
+      out.write("                <div class=\"event-location\">Location: RCH 301</div>\n");
+      out.write("                <div class=\"event-created-time\">10 hours ago</div>\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"event-date-wrap\">\n");
+      out.write("                <div class=\"event-date-container\">\n");
+      out.write("                    <div class=\"event-month-year-past\"><span class=\"event-month\">Jan</span><span class=\"event-year-past\">'14</span></div>\n");
+      out.write("                    <div class=\"event-day\">7th</div>\n");
+      out.write("                    <div class=\"event-time\">8:00 pm</div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("    <div>Chatting</div>\n");
+      out.write("        <div class=\"post-input-wrap\">\n");
+      out.write("            <form>\n");
+      out.write("                <div class=\"post-input\">\n");
+      out.write("                    <textarea name=\"post-input-content\"></textarea>\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"post-input-submit\">\n");
+      out.write("                    <input type=\"submit\" value=\"Chat\"/>\n");
+      out.write("                </div>\n");
+      out.write("            </form>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"post-output-wrap\">\n");
+      out.write("            <div class=\"post-output-img\">\n");
+      out.write("                <img width=\"40px\" height=\"40px \" src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/waterloo_logo.png\">\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"post-output\">\n");
+      out.write("                <div class=\"post-output-name\">SANGHWAN KIM</div>\n");
+      out.write("                <div class=\"post-output-content\">w: auto; overflow: aulow: auto; overflow: auto;</div>\n");
+      out.write("                <div class=\"post-output-time\">10 hours ago</div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"post-output-wrap\">\n");
+      out.write("            <div class=\"post-output-img\">\n");
+      out.write("                <img width=\"40px\" height=\"40px \" src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/waterloo_logo.png\">\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"post-output\">\n");
+      out.write("                <div class=\"post-output-name\">SANGHWAN KIM</div>\n");
+      out.write("                <div class=\"post-output-content\">w: auto; overflow: auto; overflow: auto;o; overflow: auto; overflow: auto; o; overflow: auto; overflow: auto;</div>\n");
+      out.write("                <div class=\"post-output-time\">10 hours ago</div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"post-output-wrap\">\n");
+      out.write("            <div class=\"post-output-img\">\n");
+      out.write("                <img width=\"40px\" height=\"40px \" src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/waterloo_logo.png\">\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"post-output\">\n");
+      out.write("                <div class=\"post-output-name\">SANGHWAN KIM</div>\n");
+      out.write("                <div class=\"post-output-content\">w: auto; overflow: auto; overflow: auto;o; overflow: auto; overflow: auto; o; overflow: auto; overflow: auto;</div>\n");
+      out.write("                <div class=\"post-output-time\">10 hours ago</div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"post-output-wrap\">\n");
+      out.write("            <div class=\"post-output-img\">\n");
+      out.write("                <img width=\"40px\" height=\"40px \" src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/img/waterloo_logo.png\">\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"post-output\">\n");
+      out.write("                <div class=\"post-output-name\">SANGHWAN KIM</div>\n");
+      out.write("                <div class=\"post-output-content\">w: auto; overflow: auto; overflow: auto;o; overflow: auto; flow: auto; overflow: auto;o; overflow: au flow: auto; overflow: auto;o; overflow: au overflow: auto; o; overflow: auto; overflow: auto;</div>\n");
+      out.write("                <div class=\"post-output-time\">10 hours ago</div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("    <div>Members</div>\n");
+      out.write("    <div>Images</div>\n");
+      out.write("</div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("    ");
+      out.write("\n");
+      out.write("    ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("                ");
+      out.write("\n");
+      out.write("                ");
+      out.write("\n");
+      out.write("                ");
+      out.write("\n");
+      out.write("                ");
+      out.write("\n");
+      out.write("                ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("    ");
+      out.write('\n');
       out.write("\n");
       out.write("\n");
       out.write("<script>\n");
@@ -72,7 +245,9 @@ public final class group_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        $('#create-event').click(function() {\n");
       out.write("            $.colorbox({href:\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/create_event_form\"});\n");
+      out.write("/create_event_form/");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${group.id}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("\"});\n");
       out.write("        })\n");
       out.write("    });\n");
       out.write("</script>");
@@ -86,34 +261,5 @@ public final class group_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
-  }
-
-  private boolean _jspx_meth_c_005fif_005f0(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:if
-    org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
-    _jspx_th_c_005fif_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fif_005f0.setParent(null);
-    // /WEB-INF/pages/group.jsp(5,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${isAdmin}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
-    int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
-    if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      do {
-        out.write("\n");
-        out.write("            <div id=\"create-event\"><button>Create event/meeting</button></div>\n");
-        out.write("        ");
-        int evalDoAfterBody = _jspx_th_c_005fif_005f0.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-    }
-    if (_jspx_th_c_005fif_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f0);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f0);
-    return false;
   }
 }

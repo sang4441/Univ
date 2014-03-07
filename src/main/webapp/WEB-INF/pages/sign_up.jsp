@@ -4,7 +4,7 @@
 
 	<h1>sign up</h1>
 
-<form method="post" action="create_user">
+<form method="post" action="${pageContext.request.contextPath}/create_user">
 
     <div><input type="text" name="email" placeholder="email"/></div>
     <div><input type="password" name="password" placeholder="password"/></div>

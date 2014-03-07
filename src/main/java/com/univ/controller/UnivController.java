@@ -4,7 +4,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import com.univ.model.Category;
 import com.univ.model.Event;
@@ -21,24 +20,23 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @Controller
-public class HelloController {
+public class UnivController {
     @Autowired GroupService groupService;
     @Autowired UserService userService;
     @Autowired EventService eventService;
     @Autowired CategoryService categoryService;
 
 
-
 	@RequestMapping(value = "/", method = RequestMethod.GET)
      public String printWelcome(ModelMap model) {
         List<Category> categories = categoryService.findTopCategories();
         model.addAttribute("categories", categories);
+
+
         return "index";
     }
 
@@ -134,9 +132,14 @@ public class HelloController {
     }
 
     @RequestMapping(value = "/profile/{id}", method = RequestMethod.GET)
-    public ModelAndView profilePage(ModelMap model, @PathVariable int id) {
-
+    public ModelAndView profilePage(HttpServletRequest request,
+                                    ModelMap model,
+                                    @PathVariable int id) {
+        HttpSession session = request.getSession();
+        User user = (User)session.getAttribute("user");
         List<Group> myGroups = groupService.findGroupByUserId(id);
+        List<Event> myEvents = eventService.findEventbyUserId(user.getId());
+        model.addAttribute("myEvents", myEvents);
         model.addAttribute("myGroups", myGroups);
         return new ModelAndView("index", "content", "profile");
     }
@@ -152,17 +155,25 @@ public class HelloController {
         } else {
             model.addAttribute("isAdmin", false);
         }
-        Group group = groupService.findGroupByUserId()
+        Group group = groupService.findGroupByGroupId(id);
+        List<Event> events = eventService.findEventByGroupId(id);
+
+        model.addAttribute("group", group);
+        model.addAttribute("events", events);
         return new ModelAndView("index", "content", "group");
     }
 
-    @RequestMapping(value = "/create_event_form", method = RequestMethod.GET)
-    public String eventForm(ModelMap model) {
-        return "create_event_form";
+    @RequestMapping(value = "/create_event_form/{groupId}", method = RequestMethod.GET)
+    public String eventForm(ModelMap model,
+                            @PathVariable int groupId) {
+        Group group = groupService.findGroupByGroupId(groupId);
+        model.addAttribute("group", group);
+        return "forms/create_event_form";
     }
 
     @RequestMapping(value = "create_event", method = RequestMethod.POST)
     public String createEvent(HttpServletRequest request,
+                              @RequestParam("group_id") int groupId,
                               @RequestParam("name") String name,
                               @RequestParam("description") String description,
                               @RequestParam("location") String location,
@@ -175,7 +186,7 @@ public class HelloController {
         event.setDescription(description);
         event.setLocation(location);
         event.setType_id(eventType);
-        event.setGroup_id(7);
+        event.setGroup_id(groupId);
         event.setDate_event(new SimpleDateFormat("MM/dd/yyyy").parse(eventDate));
         event.setDate_created(new Date());
         event.setCreated_by(user.getId());

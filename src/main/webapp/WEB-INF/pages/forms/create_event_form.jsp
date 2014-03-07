@@ -10,7 +10,7 @@
 <div class="row-fluid">
     <div class="span10 offset1">
         <h1>New meeting/event</h1>
-        <form action="create_event" method="post">
+        <form action="${pageContext.request.contextPath}/create_event" method="post">
             <div><input class="span10" type="text" name="name" placeholder="name"/></div>
             <div><textarea class="span10" name="description" rows="4" cols="50" placeholder="description"></textarea></div>
             <div><input class="span10" type="text" name="location" placeholder="location"/></div>
@@ -38,6 +38,7 @@
                 <input type="checkbox" name="emailNotice" value="">
                 Send email notifications to all members
             </label>
+            <input type="hidden" name="group_id" value="${group.id}">
             <div><input type="submit" value="Create event"></div>
         </form>
     </div>

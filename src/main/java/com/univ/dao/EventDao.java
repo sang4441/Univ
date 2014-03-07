@@ -39,5 +39,39 @@ public class EventDao {
 
         return events;
     }
+
+    public List<Event> getEventByUserId(int id) {
+//        String sql = "select ev.*, gr.name as group_name from events as ev \n" +
+//                "left join groups as gr on ev.group_id = gr.id\n" +
+//                "left join userGroup as ug on ug.group_id = gr.id\n" +
+//                "where ug.user_id = ?";
+        //can be used for event and group info
+
+        String sql = "select ev.* from events as ev \n" +
+                "left join userGroup as ug on ug.group_id = ev.group_id\n" +
+                "where ug.user_id = ?";
+
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+
+        List<Event> events  = jdbcTemplate.query(
+                sql,
+                new Object[] {id},
+                new BeanPropertyRowMapper(Event.class));
+
+        return events;
+    }
+
+    public List<Event> getEventByGroupId(int groupId) {
+        String sql = "select * from events where group_id = ?";
+
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+
+        List<Event> events  = jdbcTemplate.query(
+                sql,
+                new Object[] {groupId},
+                new BeanPropertyRowMapper(Event.class));
+
+        return events;
+    }
 }
 

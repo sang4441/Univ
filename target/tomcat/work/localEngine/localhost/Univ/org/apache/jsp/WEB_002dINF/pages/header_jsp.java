@@ -11,8 +11,6 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List _jspx_dependants;
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems;
-
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
 
@@ -21,13 +19,11 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -57,32 +53,51 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<!DOCTYPE HTML>\n");
       out.write("\n");
       out.write("\n");
-      out.write("<div class=\"row-fluid\">\n");
-      out.write("    <div class=\"span8 offset2\">\n");
-      out.write("        <a href=\"/Univ\"><button class=\"btn\" type=\"button\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${user.email}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</button></a>\n");
-      out.write("        <div class=\"btn-group\">\n");
-      out.write("            <a class=\"btn dropdown-toggle\" data-toggle=\"dropdown\" href=\"/Univ/club\">\n");
-      out.write("                Find club\n");
-      out.write("                <span class=\"caret\"></span>\n");
-      out.write("            </a>\n");
-      out.write("            <ul class=\"dropdown-menu\">\n");
-      out.write("                ");
-      if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
-        return;
       out.write("\n");
-      out.write("            </ul>\n");
+      out.write("    ");
+      out.write("\n");
+      out.write("        <div id=\"header-wrap\">\n");
+      out.write("            Univ\n");
       out.write("        </div>\n");
-      out.write("        <input type=\"text\" class=\"span6\" placeholder=\"search\"/>\n");
-      out.write("        <button class=\"btn\" type=\"button\">Search</button>\n");
-      out.write("        <a href=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/log_out\"><button class=\"btn\" type=\"button\">Log Out</button></a>\n");
+      out.write("    ");
+      out.write('\n');
       out.write("\n");
-      out.write("    </div>\n");
-      out.write("</div>\n");
+      out.write("    ");
       out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("                ");
+      out.write("\n");
+      out.write("                ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("                ");
+      out.write("\n");
+      out.write("                    ");
+      out.write("\n");
+      out.write("                ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("    ");
+      out.write('\n');
+      out.write('\n');
+      out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -93,49 +108,5 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
-  }
-
-  private boolean _jspx_meth_c_005fforEach_005f0(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:forEach
-    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
-    _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fforEach_005f0.setParent(null);
-    // /WEB-INF/pages/header.jsp(13,16) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/header.jsp(13,16) '${categories}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${categories}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/pages/header.jsp(13,16) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setVar("category");
-    int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
-    try {
-      int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
-      if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-        do {
-          out.write("\n");
-          out.write("                    <li><a href=\"/Univ/category/");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${category.id}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write('"');
-          out.write('>');
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${category.name}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</a></li>\n");
-          out.write("                ");
-          int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
-          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-            break;
-        } while (true);
-      }
-      if (_jspx_th_c_005fforEach_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-        return true;
-      }
-    } catch (Throwable _jspx_exception) {
-      while (_jspx_push_body_count_c_005fforEach_005f0[0]-- > 0)
-        out = _jspx_page_context.popBody();
-      _jspx_th_c_005fforEach_005f0.doCatch(_jspx_exception);
-    } finally {
-      _jspx_th_c_005fforEach_005f0.doFinally();
-      _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.reuse(_jspx_th_c_005fforEach_005f0);
-    }
-    return false;
   }
 }

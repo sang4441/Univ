@@ -24,74 +24,36 @@
 </head>
 
 <body>
-
-
-<%--<div class="span12">--%>
-    <%--<div class="span10 offset1 navbar">--%>
-        <%--<div class="nav-collapse collapse" id="top-category-nav">--%>
-            <%--<ul class="nav myMenu">--%>
-                <%--<li>--%>
-                    <%--<a href="/Univ/category/1">All</a>--%>
-                    <%--<div class="category-dropdown">--%>
-                        <%--<ul>--%>
-                            <%--<li><a href="">test</a></li>--%>
-                            <%--<li><a href="">test</a></li>--%>
-                            <%--<li><a href="">test</a></li>--%>
-                            <%--<li><a href="">test</a></li>--%>
-                        <%--</ul>--%>
-                    <%--</div>--%>
-                <%--</li>--%>
-                <%--<li><a href="/Univ/category/2">Sports & athletic</a></li>--%>
-                <%--<li><a href="/Univ/category/3">Arts & Music</a></li>--%>
-                <%--<li><a href="/Univ/category/4">Charitable, cummunity</a></li>--%>
-                <%--<li><a href="/Univ/category/5">Health</a></li>--%>
-                <%--<li><a href="/Univ/category/6">Learning & Academics</a></li>--%>
-                <%--<li><a href="/Univ/category/7">Entertainment & leisure</a></li>--%>
-                <%--<li><a href="/Univ/category/8">Business, leadership</a></li>--%>
-                <%--<li><a href="/Univ/category/9">Religion & Culture</a></li>--%>
-            <%--</ul>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-<%--</div>--%>
-
-<c:choose>
-    <c:when test="${not empty sessionScope.user.email}">
-        <jsp:include page="header.jsp" />
-        <div id="content-body">
+    <c:choose>
+        <c:when test="${not empty sessionScope.user.email}">
+            <jsp:include page="header.jsp" />
+            <div id="content-body">
+                <c:choose>
+                    <c:when test="${not empty content}">
+                        <c:set var="content" value="${content}.jsp"/>
+                        <jsp:include page="${content}"/>
+                    </c:when>
+                    <c:otherwise>
+                        <%--<jsp:include page="find_club.jsp"/>--%>
+                    </c:otherwise>
+                </c:choose>
+            </div>
+        </c:when>
+        <c:otherwise>
             <div class="container-fluid">
-                <div class="row-fluid">
-                    <c:choose>
-                        <c:when test="${not empty content}">
-                            <c:set var="content" value="${content}.jsp"/>
-                            <jsp:include page="${content}"/>
-                        </c:when>
-                        <c:otherwise>
-                            <%--<jsp:include page="find_club.jsp"/>--%>
-                        </c:otherwise>
-                    </c:choose>
+                <div class="span4 offset6">
+                    <jsp:include page="sign_in.jsp" />
+
+                </div>
+                <div class="span5">
+                    <jsp:include page="sign_up.jsp" />
                 </div>
             </div>
-        </div>
-    </c:when>
-    <c:otherwise>
-        <div class="container-fluid">
-            <div class="span4 offset6">
-                <jsp:include page="sign_in.jsp" />
-
-            </div>
-            <div class="span5">
-                <jsp:include page="sign_up.jsp" />
-            </div>
-        </div>
-
-
-        <%--<a href="${pageContext.request.contextPath}/sign_up_page"><button class="btn" type="button">Sign up</button></a>--%>
-        <%--<a href="${pageContext.request.contextPath}/sign_in_page"><button class="btn" type="button">Sign in</button></a>--%>
-    </c:otherwise>
-</c:choose>
-
+            <%--<a href="${pageContext.request.contextPath}/sign_up_page"><button class="btn" type="button">Sign up</button></a>--%>
+            <%--<a href="${pageContext.request.contextPath}/sign_in_page"><button class="btn" type="button">Sign in</button></a>--%>
+        </c:otherwise>
+    </c:choose>
 <jsp:include page="footer.jsp" />
-
 
 
 <script type="text/javascript">

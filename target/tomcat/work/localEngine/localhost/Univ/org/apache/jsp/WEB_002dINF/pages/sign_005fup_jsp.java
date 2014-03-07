@@ -56,7 +56,9 @@ public final class sign_005fup_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\t<h1>sign up</h1>\n");
       out.write("\n");
-      out.write("<form method=\"post\" action=\"create_user\">\n");
+      out.write("<form method=\"post\" action=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/create_user\">\n");
       out.write("\n");
       out.write("    <div><input type=\"text\" name=\"email\" placeholder=\"email\"/></div>\n");
       out.write("    <div><input type=\"password\" name=\"password\" placeholder=\"password\"/></div>\n");

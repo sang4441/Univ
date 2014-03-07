@@ -50,6 +50,15 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
+      out.write("<!DOCTYPE HTML>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<div class=\"row-fluid\">\n");
+      out.write("    <div class=\"span12\" id=\"header-wrap\">\n");
+      out.write("        Footer\n");
+      out.write("    </div>\n");
+      out.write("</div>\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
