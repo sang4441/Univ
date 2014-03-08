@@ -1,10 +1,10 @@
-package org.apache.jsp.WEB_002dINF.pages;
+package org.apache.jsp.WEB_002dINF.pages.group;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class about_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -50,13 +50,11 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("<!DOCTYPE HTML>\n");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "side_nav.jsp", out, false);
       out.write("\n");
-      out.write("\n");
-      out.write("<div id=\"footer-wrap\">\n");
-      out.write("\n");
+      out.write("<div class=\"content-right\">\n");
+      out.write("    <div>About</div>\n");
       out.write("</div>\n");
-      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

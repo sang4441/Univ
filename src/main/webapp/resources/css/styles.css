@@ -2,7 +2,8 @@
   /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   /*font-size: 18px;*/
 /*}*/
-html,body,.container-fluid { height:100%; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+html,body,.container-fluid { height:100%; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;background-image:url('../img/background-pattern2.png');
+    background-repeat:repeat;}
 
 #header {
 	/*padding-top: 5px;*/
@@ -50,31 +51,52 @@ html,body,.container-fluid { height:100%; font-family: "Helvetica Neue", Helveti
     width:1005px;
     margin-left:auto;
     margin-right:auto;
-    border-width:0px 1px 0px 1px;
-    border-style:solid;
+    /*border-width:0px 1px 0px 1px;*/
+    /*border-style:solid;*/
     height:100%;
-    border-color: grey;
+    /*border-color: grey;*/
 
 }
 
 #header-wrap {
+    z-index:2;
+    position: fixed;
     background-color: black;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+#footer-wrap {
+
 }
 
 .content-right {
+
+    /*overflow: auto;*/
+    background-color: white;
+    box-shadow: 5px 5px 5px #888888;
+    padding: 10px;
+    z-index:1;
+    position: relative;
+    top: 50px;
     float:right;
     border-color: grey;
-    height:100%;
-    width: 700px;
+    min-height:100%;
+    width: 703px;
 }
 
 .content-left {
+    box-shadow: 5px 5px 5px #888888;
+    position: fixed;
+    top: 50px;
     float:left;
-    border-width:0px 1px 0px 0px;
+    /*border: solid;*/
+    border-width:0px 1px 1px 1px;
     border-style:solid;
     border-color: grey;
     height:100%;
-    width: 300px;
+    width: 302px;
+    background-color: white;
 }
 
 .content-left ul {
@@ -88,32 +110,36 @@ html,body,.container-fluid { height:100%; font-family: "Helvetica Neue", Helveti
      border-style:solid;
      border-color: grey;
  }
+ .nav-left {
+     display: table;
+ }
 
 .nav-left li a:hover {
     background-color: lightgrey;
-    color: gray;
+    color: black;
 }
 .nav-left li a.active {
     background-color: blueviolet;
 }
 
  .nav-left-menu {
+     vertical-align: middle;
      min-height : 50px;
      text-align: center;
      font-size: 15px;
  }
 .nav-left-img {
-    height: 150px;
+    padding: 30px;
+    text-align: center;
+    height: 200px;
     border: solid;
 }
-.nav-left-img img {
-    margin-left: 50px;
-    margin-top: 20px;
-    vertical-align:text-top;
-}
-.nav-left-menu a {
 
-    color: darkgray;
+.nav-left-menu a {
+    padding: 13px;
+    font-weight:100;
+    font-weight:normal;
+    color: black;
     display: block;
     width: 300px;
     height: 50px;
@@ -124,7 +150,13 @@ html,body,.container-fluid { height:100%; font-family: "Helvetica Neue", Helveti
     color: lightgray;
     text-decoration: none;
 }
+
+.event-header {
+    padding-top: 10px;
+    padding-left: 47px;
+}
 .event-wrap {
+    background-color: #ffffff;
     overflow: auto;
     min-height:120px;
     width: 600px;
@@ -207,13 +239,30 @@ html,body,.container-fluid { height:100%; font-family: "Helvetica Neue", Helveti
 .event-img {
 
 }
-.post-input-wrap {
-    /*overflow: auto;*/
-    height:105px;
+#post-container {
+    margin-top: 100px;
+    box-shadow: 5px 5px 5px #888888;
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
     width: 600px;
     margin-left:auto;
     margin-right:auto;
-    border-width: 1px;
+}
+.post-input-wrap {
+    box-shadow: 5px 5px 5px #888888;
+    background-color: #ffffff;
+    margin-left:auto;
+    margin-right:auto;
+    position: fixed;
+    display: block;
+    cursor: auto;
+    top: 50px;
+    right: 49px;
+    left: 350px;
+    height:105px;
+    width: 600px;
+    border-width: 1px 1px 1px 1px;
     border-color: grey;
     border-style: solid;
 }
@@ -240,10 +289,10 @@ html,body,.container-fluid { height:100%; font-family: "Helvetica Neue", Helveti
 }
 .post-output-wrap {
     overflow: auto;
-    width: 600px;
+    width: 599px;
     margin-left:auto;
     margin-right:auto;
-    border-width: 0px 1px 1px 1px;
+    border-width: 0px 0px 1px 0px;
     border-color: grey;
     border-style: solid;
 }
@@ -255,7 +304,7 @@ html,body,.container-fluid { height:100%; font-family: "Helvetica Neue", Helveti
     width: 80px;
 }
 .post-output {
-    padding: 5px;
+    padding: 5px 15px 5px 5px;
     float: right;
     min-height: 65px;
     width: 510px;

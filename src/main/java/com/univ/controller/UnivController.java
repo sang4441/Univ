@@ -160,7 +160,26 @@ public class UnivController {
 
         model.addAttribute("group", group);
         model.addAttribute("events", events);
-        return new ModelAndView("index", "content", "group");
+        return new ModelAndView("index", "content", "group/about");
+    }
+
+    @RequestMapping(value = "/group/{id}/about", method = RequestMethod.GET)
+    public ModelAndView groupAboutPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
+        Group group = groupService.findGroupByGroupId(id);
+        model.addAttribute("group", group);
+        return new ModelAndView("index", "content", "group/about");
+    }
+    @RequestMapping(value = "/group/{id}/event", method = RequestMethod.GET)
+    public ModelAndView groupEventPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
+        Group group = groupService.findGroupByGroupId(id);
+        model.addAttribute("group", group);
+        return new ModelAndView("index", "content", "group/event");
+    }
+    @RequestMapping(value = "/group/{id}/chat", method = RequestMethod.GET)
+    public ModelAndView groupChatPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
+        Group group = groupService.findGroupByGroupId(id);
+        model.addAttribute("group", group);
+        return new ModelAndView("index", "content", "group/chat");
     }
 
     @RequestMapping(value = "/create_event_form/{groupId}", method = RequestMethod.GET)
