@@ -10,56 +10,38 @@ Backbone.View.prototype.close = function () {
 var AppRouter = Backbone.Router.extend({
 
     initialize: function() {
-
+        console.log("123");
     },
 
 	routes: {
-		"category/:id"	: "getClubList",
-		"signup"		: "signup",
-		"create_group"	: "createGroup"
+        "about"          : "about",
+        "event"         :  "event",
+        "image"         :  "image",
+        "chat"          :  "chat",
+        "members"       :  "members"
 	},
 
-//	list: function() {
-//        this.before();
-//  	},
+    about: function() {
+        console.log('about');
+    },
 
-	getClubList: function(id) {
-		 if (this.clubList) {
-           if (callback) callback();
-       } else {
-           this.clubList = new ClubCollection();
-           this.clubList.url='api/clubs/'+id;
-           this.clubList.fetch({success: function() {
-        	   console.log("fetch succeeded");
-        	   $('#content').html( new ClubListView({model: app.clubList}).render().el );
-           }});
-       }
-//		console.log(id);
-//        this.before(function() {
-//			var wine = app.clubList.get(id);
-//			console.log(wine);
-//		    app.showView( '#content', new WineView({model: wine}) );
-//        });
-  	},
-  	
-  	signup: function() {
-  		app.showView('#content', new SignUpView());
-  	},
-  	
-  	createGroup: function() {
-  		app.showView('#content', new CreateGroupView());
-  	},
+    event: function() {
+        console.log('event');
+    },
 
-    showView: function(selector, view) {
-        if (this.currentView)
-            this.currentView.close();
-        $(selector).html(view.render().el);
-        this.currentView = view;
-        return view;
+    image: function() {
+        console.log('image');
+    },
+
+    chat: function() {
+        console.log('chat');
+    },
+
+    members: function() {
+        console.log('members');
     }
 });
 
-tpl.loadTemplates(['club-list', 'sign-up', 'tmp', 'create-group'], function() {
-    app = new AppRouter();
-    Backbone.history.start();
-});
+app = new AppRouter();
+Backbone.history.start();
+

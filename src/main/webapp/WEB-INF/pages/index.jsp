@@ -16,11 +16,11 @@
     <script src="${pageContext.request.contextPath}/resources/lib/backbone-min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/lib/bootstrap.min.js"></script>
 
-    <script src="${pageContext.request.contextPath}/resources/js/utils.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/js/models/clubmodel.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/js/views/header.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/js/views/clublist.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/js/main.js"></script>
+    <%--<script src="${pageContext.request.contextPath}/resources/js/utils.js"></script>--%>
+    <%--<script src="${pageContext.request.contextPath}/resources/js/models/clubmodel.js"></script>--%>
+    <%--<script src="${pageContext.request.contextPath}/resources/js/views/header.js"></script>--%>
+    <%--<script src="${pageContext.request.contextPath}/resources/js/views/clublist.js"></script>--%>
+    <%--<script src="${pageContext.request.contextPath}/resources/js/main.js"></script>--%>
 </head>
 
 <body>

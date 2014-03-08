@@ -50,7 +50,9 @@ public final class side_005fnav_jsp extends org.apache.jasper.runtime.HttpJspBas
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/js/main.js\"></script>\n");
       out.write("<div class=\"content-left\">\n");
       out.write("    <ul class=\"nav-left\">\n");
       out.write("        <li class=\"nav-left-img\"><a><img width=\"200px\" height=\"130\" src=\"");
@@ -74,7 +76,8 @@ public final class side_005fnav_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("/chat\">Chat <span class=\"badge\">42</span></a></li>\n");
       out.write("        <li class=\"nav-left-menu active\"><a href=\"#\">Members</a></li>\n");
       out.write("    </ul>\n");
-      out.write("</div>");
+      out.write("</div>\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

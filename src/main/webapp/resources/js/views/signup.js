@@ -1,4 +1,4 @@
-//window.SignUpView = Backbone.View.extend({
+e//window.SignUpView = Backbone.View.extend({
 //
 //    tagName: "div",
 //
