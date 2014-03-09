@@ -1,4 +1,4 @@
-tpl = {
+window.tpl = {
 
     // Hash of preloaded templates for the app
     templates: {},
@@ -13,7 +13,7 @@ tpl = {
         var loadTemplate = function(index) {
             var name = names[index];
             console.log('Loading template: ' + name);
-            $.get('tpl/' + name + '.html', function(data) {
+            $.get('/Univ/resources/tpl/' + name + '.html', function(data) {
                 that.templates[name] = data;
                 index++;
                 if (index < names.length) {

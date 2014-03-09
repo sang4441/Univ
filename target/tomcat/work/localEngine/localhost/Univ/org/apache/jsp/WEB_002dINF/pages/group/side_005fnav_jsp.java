@@ -50,9 +50,9 @@ public final class side_005fnav_jsp extends org.apache.jasper.runtime.HttpJspBas
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("<script src=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/resources/js/main.js\"></script>\n");
+      out.write("\n");
+      out.write("<script src=\"/Univ/resources/js/utils.js\"></script>\n");
+      out.write("<script src=\"/Univ/resources/js/router.js\"></script>\n");
       out.write("<div class=\"content-left\">\n");
       out.write("    <ul class=\"nav-left\">\n");
       out.write("        <li class=\"nav-left-img\"><a><img width=\"200px\" height=\"130\" src=\"");
@@ -62,21 +62,22 @@ public final class side_005fnav_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("/group/");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${group.id}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/about\">About UW Act</a></li>\n");
+      out.write("#about\">About UW Act</a></li>\n");
       out.write("        <li class=\"nav-left-menu\"><a href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("/group/");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${group.id}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/event\">Meeting/Events <span class=\"badge\">1</span></a></li>\n");
+      out.write("#event\">Meeting/Events <span class=\"badge\">1</span></a></li>\n");
       out.write("        <li class=\"nav-left-menu\"><a href=\"#\">Images/Videos</a></li>\n");
       out.write("        <li class=\"nav-left-menu\"><a href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("/group/");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${group.id}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/chat\">Chat <span class=\"badge\">42</span></a></li>\n");
+      out.write("#chat\">Chat <span class=\"badge\">42</span></a></li>\n");
       out.write("        <li class=\"nav-left-menu active\"><a href=\"#\">Members</a></li>\n");
       out.write("    </ul>\n");
       out.write("</div>\n");
+      out.write("<div class=\"content-right\"></div>\n");
       out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

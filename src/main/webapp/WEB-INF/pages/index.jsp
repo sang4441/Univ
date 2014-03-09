@@ -15,7 +15,7 @@
     <script src="${pageContext.request.contextPath}/resources/lib/underscore-min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/lib/backbone-min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/lib/bootstrap.min.js"></script>
-
+    <script src="${pageContext.request.contextPath}/resources/lib/handlebars-v1.3.0.js"></script>
     <%--<script src="${pageContext.request.contextPath}/resources/js/utils.js"></script>--%>
     <%--<script src="${pageContext.request.contextPath}/resources/js/models/clubmodel.js"></script>--%>
     <%--<script src="${pageContext.request.contextPath}/resources/js/views/header.js"></script>--%>

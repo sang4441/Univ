@@ -100,7 +100,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <script src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("/resources/lib/bootstrap.min.js\"></script>\n");
-      out.write("\n");
+      out.write("    <script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/resources/lib/handlebars-v1.3.0.js\"></script>\n");
       out.write("    ");
       out.write("\n");
       out.write("    ");

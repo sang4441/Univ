@@ -55,8 +55,8 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/univ/dao/GroupDao.java" line="36" class="com.univ.dao.GroupDao" package="com.univ.dao">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/univ/dao/GroupDao.java" line="34" class="com.univ.dao.GroupDao" package="com.univ.dao">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -81,28 +81,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+      <file leaf-file-name="chat.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/chat.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="87" selection-start="1558" selection-end="1637" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1230">
+            <state line="12" column="4" selection-start="378" selection-end="403" vertical-scroll-proportion="-0.625" vertical-offset="165" max-vertical-offset="1665">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="side_nav.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/side_nav.jsp">
+      <file leaf-file-name="UnivController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/controller/UnivController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="79" selection-start="79" selection-end="79" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="270">
+            <state line="203" column="57" selection-start="8393" selection-end="8393" vertical-scroll-proportion="0.0" vertical-offset="2953" max-vertical-offset="3765">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/EventDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="42" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+      <file leaf-file-name="PostDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/PostDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="6" selection-start="492" selection-end="492" vertical-scroll-proportion="0.31133428" vertical-offset="98" max-vertical-offset="795">
+            <state line="19" column="87" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="705">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1394346148000" expanded="true" signature="469:507" placeholder="select * fro..posts..." />
+                <marker date="1394346148000" expanded="true" signature="469:534" placeholder="select * fro..posts..." />
+                <marker date="1394346148000" expanded="true" signature="863:946" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="0" selection-start="1720" selection-end="1720" vertical-scroll-proportion="-2.8846154" vertical-offset="900" max-vertical-offset="2205">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="underscore-min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/lib/underscore-min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="39" selection-start="14682" selection-end="14682" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_input.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/tpl/chat/post_input.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="31" selection-start="334" selection-end="334" vertical-scroll-proportion="0.2251407" vertical-offset="0" max-vertical-offset="533">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/tpl/chat/post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="10" selection-start="161" selection-end="161" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/PostService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="22" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backbone-min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/lib/backbone-min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="37" selection-start="19999" selection-end="19999" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
               <folding />
             </state>
           </provider>
@@ -118,28 +192,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/model/Group.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/model/Posting.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/model/Image.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/dao/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/dao/CategoryDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/dao/CategoryDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/services/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create_group_form.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/dao/GroupDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/model/Event.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/colorbox.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/services/GroupService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/services/GroupServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/dao/GroupDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/create_event_form.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/email/invitation.vm" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/common/email/InviteMemberEmailTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/common/email/EmailTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/common/email/EventNotificationEmailTemplate.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/services/EmailServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/services/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/univ/services/EventService.java" />
@@ -150,25 +204,45 @@
         <option value="$PROJECT_DIR$/src/main/java/com/univ/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/profile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chat.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/about.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/group.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/about.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/univ/controller/UnivController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/footer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/event.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/chat.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/member.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/views/signup.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/side_nav.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/lib/require.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/event.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/group.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/clublist.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/views/clublist.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/tpl/event.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/utils.js" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/event.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/group.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/tpl/group/even_header.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/tpl/group/event.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/side_nav.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/univ/model/Posting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/univ/model/Post.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/univ/services/PostService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/univ/services/PostServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/univ/controller/UnivController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/tpl/chat/post.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/lib/backbone-min.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/lib/underscore-min.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/univ/dao/PostDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/router.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/tpl/chat/post_input.html" />
       </list>
     </option>
   </component>
@@ -222,7 +296,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="19" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1054" />
   </component>
@@ -271,8 +346,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -429,15 +502,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="tpl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
+              <option name="myItemId" value="group" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="University" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="University" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,104 +631,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="University" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="University" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="University" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="University" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="University" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="University" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -771,38 +780,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="University" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="University" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="univ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="email" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -825,18 +806,23 @@
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="SearchEverywhereHistory" value="" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/tpl" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/forms" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.univ" />
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/tpl/group" />
+      <recent name="$PROJECT_DIR$/src/main/java/com" />
+      <recent name="$PROJECT_DIR$/src/main/univ/common" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/views" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.University [clean]">
@@ -1084,6 +1070,67 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+    <configuration default="false" name="University [clean]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+                <option value="process-resources" />
+                <option value="tomcat:run" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="css/js" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="wro4j:run" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="false" name="Tomcat 8.0.0-RC10" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.0-RC10" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <deployment>
         <artifact name="University:war exploded">
@@ -1159,45 +1206,11 @@
         </option>
       </method>
     </configuration>
-    <configuration default="false" name="University [clean]" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-                <option value="compile" />
-                <option value="process-resources" />
-                <option value="tomcat:run" />
-              </list>
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.AppTests" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.0-RC10" />
-      <item index="2" class="java.lang.String" itemvalue="Maven.University [clean]" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.University [clean]" />
+      <item index="2" class="java.lang.String" itemvalue="Maven.css/js" />
+      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.0-RC10" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1223,15 +1236,16 @@
       <workItem from="1392187014331" duration="11840000" />
       <workItem from="1392351097712" duration="182000" />
       <workItem from="1393866272969" duration="500000" />
-      <workItem from="1393902670908" duration="61836000" />
+      <workItem from="1393902670908" duration="68769000" />
+      <workItem from="1394300524732" duration="22929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126662000" />
+    <option name="totallyTimeSpent" value="156524000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1054" extended-state="0" />
+    <frame x="19" y="23" width="1920" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1239,12 +1253,11 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22542734" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38998958" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1256,11 +1269,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23819743" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20713525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41798943" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20260416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41773504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1279,240 +1293,18 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="172" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/forms/create_group_form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="33" selection-start="352" selection-end="352" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/model/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="26" selection-start="1837" selection-end="1837" vertical-scroll-proportion="0.0" vertical-offset="1137" max-vertical-offset="1710">
-          <folding>
-            <element signature="e#427#428#0" expanded="false" />
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#485#486#0" expanded="false" />
-            <element signature="e#513#514#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#571#572#0" expanded="false" />
-            <element signature="e#611#612#0" expanded="false" />
-            <element signature="e#643#644#0" expanded="false" />
-            <element signature="e#681#682#0" expanded="false" />
-            <element signature="e#715#716#0" expanded="false" />
-            <element signature="e#769#770#0" expanded="false" />
-            <element signature="e#815#816#0" expanded="false" />
-            <element signature="e#850#851#0" expanded="false" />
-            <element signature="e#881#882#0" expanded="false" />
-            <element signature="e#929#930#0" expanded="false" />
-            <element signature="e#969#970#0" expanded="false" />
-            <element signature="e#1004#1005#0" expanded="false" />
-            <element signature="e#1037#1038#0" expanded="false" />
-            <element signature="e#1087#1088#0" expanded="false" />
-            <element signature="e#1131#1132#0" expanded="false" />
-            <element signature="e#1168#1169#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1257#1258#0" expanded="false" />
-            <element signature="e#1305#1306#0" expanded="false" />
-            <element signature="e#1343#1344#0" expanded="false" />
-            <element signature="e#1379#1380#0" expanded="false" />
-            <element signature="e#1435#1436#0" expanded="false" />
-            <element signature="e#1485#1486#0" expanded="false" />
-            <element signature="e#1517#1518#0" expanded="false" />
-            <element signature="e#1548#1549#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-            <element signature="e#1664#1665#0" expanded="false" />
-            <element signature="e#1694#1695#0" expanded="false" />
-            <element signature="e#1737#1738#0" expanded="false" />
-            <element signature="e#1775#1776#0" expanded="false" />
-            <element signature="e#1809#1810#0" expanded="false" />
-            <element signature="e#1842#1843#0" expanded="false" />
-            <element signature="e#1891#1892#0" expanded="false" />
-            <element signature="e#1935#1936#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/text/DateFormat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="26" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="2085">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34444" selection-start="34661" selection-end="34664" vertical-scroll-proportion="-4.6153846" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/find_club.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="53" selection-start="481" selection-end="494" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1995">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="449" selection-end="449" vertical-scroll-proportion="0.30769232" vertical-offset="113" max-vertical-offset="795">
-          <folding>
-            <marker date="1393969598000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1393969598000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1393969598000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/CategoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="33" selection-start="446" selection-end="446" vertical-scroll-proportion="-8.653846" vertical-offset="0" max-vertical-offset="495">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1393969532000" expanded="true" signature="-1:-1" placeholder="select * fro..categories..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/GroupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="384" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/model/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/forms/create_event_form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="69" selection-start="1930" selection-end="1930" vertical-scroll-proportion="-16.625" vertical-offset="201" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/GroupServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="46" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="19" selection-start="7547" selection-end="7547" vertical-scroll-proportion="-8.6" vertical-offset="1435" max-vertical-offset="1995">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/email/invitation.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="549">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="34" selection-start="2599" selection-end="2599" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="1755">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/EmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/common/email/EmailTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="40" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
-          <folding>
-            <element signature="e#914#915#0" expanded="false" />
-            <element signature="e#943#944#0" expanded="false" />
-            <element signature="e#984#985#0" expanded="false" />
-            <element signature="e#1020#1021#0" expanded="false" />
-            <element signature="e#1048#1049#0" expanded="false" />
-            <element signature="e#1075#1076#0" expanded="false" />
-            <element signature="e#1112#1113#0" expanded="false" />
-            <element signature="e#1144#1145#0" expanded="false" />
-            <element signature="e#1178#1179#0" expanded="false" />
-            <element signature="e#1208#1209#0" expanded="false" />
-            <element signature="e#1254#1255#0" expanded="false" />
-            <element signature="e#1292#1293#0" expanded="false" />
-            <element signature="e#1326#1327#0" expanded="false" />
-            <element signature="e#1356#1357#0" expanded="false" />
-            <element signature="e#1402#1403#0" expanded="false" />
-            <element signature="e#1440#1441#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/common/email/InviteMemberEmailTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="38" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/common/email/EventNotificationEmailTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="72" selection-start="319" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding>
-            <element signature="e#461#462#0" expanded="false" />
-            <element signature="e#489#490#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/EmailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="5" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/EventService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="269" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <folding />
         </state>
       </provider>
@@ -1521,33 +1313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="41" selection-start="705" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/EventDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="2462" selection-end="2462" vertical-scroll-proportion="0.0" vertical-offset="500" max-vertical-offset="1140">
-          <folding>
-            <marker date="1394134038000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1394134038000" expanded="true" signature="-1:-1" placeholder="select * fro..events..." />
-            <marker date="1394134038000" expanded="true" signature="-1:-1" placeholder="select ev.* ..events..." />
-            <marker date="1394134038000" expanded="true" signature="-1:-1" placeholder="select * fro..events..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/GroupDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="56" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.0" vertical-offset="740" max-vertical-offset="1455">
-          <folding>
-            <marker date="1394071660000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1394071660000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..groups..." />
-            <marker date="1394071660000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1394071660000" expanded="true" signature="-1:-1" placeholder="SELECT gr.*,..groups..." />
-            <marker date="1394071660000" expanded="true" signature="-1:-1" placeholder="SELECT gr.* ..groups..." />
-            <marker date="1394071660000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..groups..." />
-            <marker date="1394071660000" expanded="true" signature="-1:-1" placeholder="SELECT is_ad..userGroup..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1561,27 +1326,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/sign_up.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="63" selection-start="311" selection-end="311" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="1120" selection-end="1120" vertical-scroll-proportion="-13.2" vertical-offset="0" max-vertical-offset="435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="2" selection-start="598" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="3" selection-start="2510" selection-end="3539" vertical-scroll-proportion="-10.653846" vertical-offset="473" max-vertical-offset="1185">
           <folding />
         </state>
       </provider>
@@ -1607,13 +1351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/group.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1994" selection-end="2211" vertical-scroll-proportion="-9.34" vertical-offset="298" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/lib/jquery.colorbox-min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="4763" selection-start="4955" selection-end="4960" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
@@ -1625,15 +1362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="58" selection-start="3786" selection-end="3786" vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="1125">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/controller/UnivController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="55" selection-start="5926" selection-end="5926" vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="3615">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1651,23 +1379,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/event.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/models/clubmodel.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/header.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="21" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9480">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/clublist.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/lib/require.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+        <state line="2" column="42" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
@@ -1679,53 +1421,267 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/header.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/clublist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/views/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="21" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/chat.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="6186" selection-end="6186" vertical-scroll-proportion="-23.75" vertical-offset="1005" max-vertical-offset="1665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="87" selection-start="1558" selection-end="1637" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1230">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/side_nav.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="79" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
+        <state line="14" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="492" selection-end="492" vertical-scroll-proportion="0.31133428" vertical-offset="98" max-vertical-offset="795">
+        <state line="4" column="52" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="1120" selection-end="1120" vertical-scroll-proportion="-13.2" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="44" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/model/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="38" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/group.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="183" selection-end="400" vertical-scroll-proportion="0.0867052" vertical-offset="0" max-vertical-offset="692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/tpl/group/event_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="128" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="28" selection-start="137" selection-end="137" vertical-scroll-proportion="0.10474861" vertical-offset="0" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="21" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.53913045" vertical-offset="78" max-vertical-offset="1845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="24" selection-start="2091" selection-end="2123" vertical-scroll-proportion="0.7153179" vertical-offset="0" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/side_nav.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="27" selection-start="1002" selection-end="1002" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/tpl/group/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="58" selection-start="394" selection-end="394" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/model/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="19" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/EventService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/GroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/GroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="69" selection-start="1988" selection-end="2004" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="17" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="5" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="33" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <folding>
+            <marker date="1393969532000" expanded="true" signature="-1:-1" placeholder="select * fro..categories..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/GroupDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="5" selection-start="2627" selection-end="2627" vertical-scroll-proportion="0.0" vertical-offset="739" max-vertical-offset="1455">
+          <folding>
+            <marker date="1394312567000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1394312567000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..groups..." />
+            <marker date="1394312567000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1394312567000" expanded="true" signature="-1:-1" placeholder="SELECT gr.*,..groups..." />
+            <marker date="1394312567000" expanded="true" signature="-1:-1" placeholder="SELECT gr.* ..groups..." />
+            <marker date="1394312567000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..groups..." />
+            <marker date="1394312567000" expanded="true" signature="-1:-1" placeholder="SELECT is_ad..userGroup..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="350" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <folding>
+            <marker date="1394312567000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1394312567000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1394312567000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/PostServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="51" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/services/PostService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="22" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/group/chat.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="378" selection-end="403" vertical-scroll-proportion="-0.625" vertical-offset="165" max-vertical-offset="1665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/EventDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="42" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/dao/PostDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="87" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="705">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1394346148000" expanded="true" signature="469:507" placeholder="select * fro..posts..." />
+            <marker date="1394346148000" expanded="true" signature="469:534" placeholder="select * fro..posts..." />
+            <marker date="1394346148000" expanded="true" signature="863:946" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/univ/controller/UnivController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="57" selection-start="8393" selection-end="8393" vertical-scroll-proportion="0.0" vertical-offset="2953" max-vertical-offset="3765">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/lib/underscore-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="39" selection-start="14682" selection-end="14682" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/lib/backbone-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="37" selection-start="19999" selection-end="19999" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/tpl/chat/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="10" selection-start="161" selection-end="161" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="1720" selection-end="1720" vertical-scroll-proportion="-2.8846154" vertical-offset="900" max-vertical-offset="2205">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/tpl/chat/post_input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="334" selection-end="334" vertical-scroll-proportion="0.2251407" vertical-offset="0" max-vertical-offset="533">
           <folding />
         </state>
       </provider>

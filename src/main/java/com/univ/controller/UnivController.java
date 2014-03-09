@@ -5,15 +5,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import com.univ.model.Category;
-import com.univ.model.Event;
-import com.univ.model.Group;
-import com.univ.model.User;
-import com.univ.services.CategoryService;
-import com.univ.services.GroupService;
-import com.univ.services.UserService;
-import com.univ.services.EventService;
+import com.univ.model.*;
+import com.univ.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -29,13 +24,20 @@ public class UnivController {
     @Autowired UserService userService;
     @Autowired EventService eventService;
     @Autowired CategoryService categoryService;
+    @Autowired PostService postService;
 
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-     public String printWelcome(ModelMap model) {
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+     public String printWelcome(HttpServletRequest request, ModelMap model) {
         List<Category> categories = categoryService.findTopCategories();
         model.addAttribute("categories", categories);
 
+
+        HttpSession session = request.getSession();
+        User user = userService.findUserById(1);
+        session.setAttribute("user", user);
+        session.setMaxInactiveInterval(30*60);
 
         return "index";
     }
@@ -113,7 +115,7 @@ public class UnivController {
 
     @RequestMapping(value = "/create_group", method = RequestMethod.POST)
 //    public String create_group(@ModelAttribute("group") Group group) {
-    public String createGroup(HttpServletRequest request,
+    public void createGroup(HttpServletRequest request,
                               @RequestParam("name") String name,
                               @RequestParam("description") String description,
                               @RequestParam("typeId") int typeId,
@@ -128,7 +130,6 @@ public class UnivController {
         User user = (User)session.getAttribute("user");
         group.setCreated_by(user.getId());
         groupService.createGroup(group, user.getId());
-        return "redirect:/";
     }
 
     @RequestMapping(value = "/profile/{id}", method = RequestMethod.GET)
@@ -160,26 +161,35 @@ public class UnivController {
 
         model.addAttribute("group", group);
         model.addAttribute("events", events);
-        return new ModelAndView("index", "content", "group/about");
+        return new ModelAndView("index", "content", "group/side_nav");
     }
 
     @RequestMapping(value = "/group/{id}/about", method = RequestMethod.GET)
     public ModelAndView groupAboutPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
         Group group = groupService.findGroupByGroupId(id);
         model.addAttribute("group", group);
-        return new ModelAndView("index", "content", "group/about");
+        return new ModelAndView("index", "content", "side_nav");
     }
+
     @RequestMapping(value = "/group/{id}/event", method = RequestMethod.GET)
-    public ModelAndView groupEventPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
-        Group group = groupService.findGroupByGroupId(id);
-        model.addAttribute("group", group);
-        return new ModelAndView("index", "content", "group/event");
+    public @ResponseBody List<Event> groupEventPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
+        return eventService.findEventByGroupId(id);
     }
+
     @RequestMapping(value = "/group/{id}/chat", method = RequestMethod.GET)
-    public ModelAndView groupChatPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
-        Group group = groupService.findGroupByGroupId(id);
-        model.addAttribute("group", group);
-        return new ModelAndView("index", "content", "group/chat");
+    public @ResponseBody List<Post> groupChatPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
+        List<Post> hi = postService.findPostByGroupId(id);
+        return postService.findPostByGroupId(id);
+    }
+
+    @RequestMapping(value = "create_post", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
+    @ResponseStatus(HttpStatus.CREATED) @ResponseBody
+    public void createEvent(HttpServletRequest request, @RequestBody Post post
+    ) throws ParseException {
+        HttpSession session = request.getSession();
+        User user = (User)session.getAttribute("user");
+        post.setCreated_by(user.getId());
+        postService.insertPost(post);
     }
 
     @RequestMapping(value = "/create_event_form/{groupId}", method = RequestMethod.GET)
@@ -210,7 +220,7 @@ public class UnivController {
         event.setDate_created(new Date());
         event.setCreated_by(user.getId());
         eventService.insertEvent(event);
-        return "redirect:/";
+        return "redirect:/group/"+groupId+"#event";
     }
 
     @RequestMapping(value = "category/{id}", method = RequestMethod.GET)

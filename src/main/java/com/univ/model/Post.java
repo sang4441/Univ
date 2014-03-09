@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by kimsanghwan on 3/4/2014.
  */
-public class Posting {
+public class Post {
     private int id;
 
     private int group_id;

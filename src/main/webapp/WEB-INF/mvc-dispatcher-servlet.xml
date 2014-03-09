@@ -23,8 +23,7 @@
         <property name="suffix" value=".jsp"/>
     </bean>
     <!-- declare beans -->
-    <bean
-            class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
     <bean id="userDao" class="com.univ.dao.UserDao" />
     <bean id="user" class="com.univ.model.User" />
     <bean id="userService" class="com.univ.services.UserServiceImpl" />
@@ -37,6 +36,9 @@
     <bean id="eventDao" class="com.univ.dao.EventDao" />
     <bean id="event" class="com.univ.model.Event" />
     <bean id="eventService" class="com.univ.services.EventServiceImpl" />
+    <bean id="postDao" class="com.univ.dao.PostDao" />
+    <bean id="post" class="com.univ.model.Post" />
+    <bean id="postService" class="com.univ.services.PostServiceImpl" />
     <!--<bean id="userService" class="com.univ.services.UserServiceImpl" />-->
 
     <!-- declare datasource bean -->
@@ -47,6 +49,8 @@
         <property name="username" value="sang" />
         <property name="password" value="password" />
     </bean>
+
+    <mvc:annotation-driven/>
 
     <!--<beans xmlns="http://www.springframework.org/schema/beans"-->
            <!--xmlns:context="http://www.springframework.org/schema/context"-->
