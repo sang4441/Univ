@@ -62,7 +62,7 @@ public class EventDao {
     }
 
     public List<Event> getEventByGroupId(int groupId) {
-        String sql = "select * from events where group_id = ?";
+        String sql = "select * from events where group_id = ? order by date_event desc";
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 

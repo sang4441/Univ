@@ -10,9 +10,17 @@
     </div>
     <div class="event-date-wrap">
         <div class="event-date-container">
-            <div class="event-month-year-past"><span class="event-month">Jan</span><span class="event-year-past">'14</span></div>
-            <div class="event-day">7th</div>
-            <div class="event-time">8:00 pm</div>
+            {{#if event_passed}}
+                <div class="event-month-year-past">
+                    <span class="event-month">{{month}}</span><span class="event-year-past">'{{year}}</span>
+                </div>
+            {{else}}
+                <div class="event-month-year">
+                    <span class="event-month">{{month}}</span><span class="event-year">'{{year}}</span>
+                </div>
+            {{/if}}
+            <div class="event-day">{{day}}<small>{{day_suffix}}</small></div>
+            <div class="event-time">{{time}}</div>
         </div>
     </div>
 </div>

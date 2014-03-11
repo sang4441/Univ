@@ -17,7 +17,11 @@ public class PostDao {
     DataSource dataSource;
 
     public List<Post> getPostByGroupId(int groupId) {
-        String sql = "select * from posts where group_id = ? order by date_created desc";
+        String sql = "select pt.*, CONCAT_WS(\" \", ur.first_name, ur.last_name) AS `user_name`, TIMEDIFF(NOW(), pt.date_created) as time_ago from posts pt\n" +
+                "inner join users ur\n" +
+                "on pt.created_by = ur.id\n" +
+                "where pt.group_id = ?\n" +
+                "order by pt.date_created desc";
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 

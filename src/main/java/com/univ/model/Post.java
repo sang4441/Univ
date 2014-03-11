@@ -14,6 +14,10 @@ public class Post {
 
     private int created_by;
 
+    private String user_name;
+
+    private Date time_ago;
+
     private Date date_created;
 
     private Date date_modified;
@@ -48,6 +52,22 @@ public class Post {
 
     public void setCreated_by(int created_by) {
         this.created_by = created_by;
+    }
+
+    public String getUser_name() {
+        return user_name;
+    }
+
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
+    }
+
+    public Date getTime_ago() {
+        return time_ago;
+    }
+
+    public void setTime_ago(Date time_ago) {
+        this.time_ago = time_ago;
     }
 
     public Date getDate_created() {

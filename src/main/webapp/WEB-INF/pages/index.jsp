@@ -53,7 +53,7 @@
             <%--<a href="${pageContext.request.contextPath}/sign_in_page"><button class="btn" type="button">Sign in</button></a>--%>
         </c:otherwise>
     </c:choose>
-<jsp:include page="footer.jsp" />
+    <jsp:include page="footer.jsp" />
 
 
 <script type="text/javascript">

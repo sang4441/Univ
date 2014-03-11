@@ -12,6 +12,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -173,13 +174,15 @@ public class UnivController {
 
     @RequestMapping(value = "/group/{id}/event", method = RequestMethod.GET)
     public @ResponseBody List<Event> groupEventPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
-        return eventService.findEventByGroupId(id);
+        List<Event> events = eventService.findEventByGroupId(id);
+        return events;
     }
 
     @RequestMapping(value = "/group/{id}/chat", method = RequestMethod.GET)
     public @ResponseBody List<Post> groupChatPage(HttpServletRequest request,ModelMap model, @PathVariable int id) {
-        List<Post> hi = postService.findPostByGroupId(id);
-        return postService.findPostByGroupId(id);
+        List<Post> posts = postService.findPostByGroupId(id);
+
+        return posts;
     }
 
     @RequestMapping(value = "create_post", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
@@ -202,25 +205,19 @@ public class UnivController {
 
     @RequestMapping(value = "create_event", method = RequestMethod.POST)
     public String createEvent(HttpServletRequest request,
-                              @RequestParam("group_id") int groupId,
-                              @RequestParam("name") String name,
-                              @RequestParam("description") String description,
-                              @RequestParam("location") String location,
-                              @RequestParam("event_type") int eventType,
-                              @RequestParam("event_date") String eventDate) throws ParseException {
+                              @ModelAttribute("event") Event event,
+                              BindingResult result) throws ParseException {
         HttpSession session = request.getSession();
         User user = (User)session.getAttribute("user");
-        Event event = new Event();
-        event.setName(name);
-        event.setDescription(description);
-        event.setLocation(location);
-        event.setType_id(eventType);
-        event.setGroup_id(groupId);
-        event.setDate_event(new SimpleDateFormat("MM/dd/yyyy").parse(eventDate));
-        event.setDate_created(new Date());
         event.setCreated_by(user.getId());
+        event.setDate_created(new Date());
+
+        SimpleDateFormat event_date = new SimpleDateFormat("yyyy-M-dd hh:mm:ss");
+        String dateString = event.getDate_event_string() + " " + event.getTime_event_string();
+        Date date = event_date.parse(dateString);
+        event.setDate_event(date);
         eventService.insertEvent(event);
-        return "redirect:/group/"+groupId+"#event";
+        return "redirect:/group/"+event.getGroup_id()+"#event";
     }
 
     @RequestMapping(value = "category/{id}", method = RequestMethod.GET)

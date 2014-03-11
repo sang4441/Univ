@@ -1,5 +1,6 @@
 package com.univ.model;
 
+import java.sql.Time;
 import java.util.Date;
 
 /**
@@ -15,6 +16,10 @@ public class Event {
     private String location;
 
     private Date date_event;
+
+    private String date_event_string;
+
+    private String time_event_string;
 
     private Date date_created;
 
@@ -64,6 +69,22 @@ public class Event {
 
     public void setDate_event(Date date_event) {
         this.date_event = date_event;
+    }
+
+    public String getDate_event_string() {
+        return date_event_string;
+    }
+
+    public void setDate_event_string(String date_event_string) {
+        this.date_event_string = date_event_string;
+    }
+
+    public String getTime_event_string() {
+        return time_event_string;
+    }
+
+    public void setTime_event_string(String time_event_string) {
+        this.time_event_string = time_event_string;
     }
 
     public Date getDate_created() {

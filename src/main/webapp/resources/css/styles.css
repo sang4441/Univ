@@ -2,8 +2,10 @@
   /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   /*font-size: 18px;*/
 /*}*/
-html,body,.container-fluid { height:100%; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;background-image:url('../img/background-pattern2.png');
-    background-repeat:repeat;}
+html,body,.container-fluid {
+    height:100%; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;background-image:url('../img/background-pattern2.png');
+    background-repeat:repeat;
+}
 
 #header {
 	/*padding-top: 5px;*/
